@@ -1,5 +1,6 @@
 ﻿# Lab 01
 
+
 # Introduction to GitHub
 
 ## Aim
@@ -139,7 +140,7 @@ The command to commit and push are as follows:
 
 ```bash
 git add [files_to_commit] # Stage
-git commit -m"Detailed message describing the changes" # Commit
+git commit -m "Detailed message describing the changes" # Commit
 git push # Push
 ```
 
@@ -151,7 +152,7 @@ git push # Push
 
 ```bash
 git add first.txt`
-git commit -m"Added a line to the first file"
+git commit -m "Added a line to the first file"
 git push
 ```
 
