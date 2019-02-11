@@ -26,7 +26,7 @@ GitHub is a version control platform (like Bitbucket or GitLab) that uses git. I
     
     -   **Make sure to verify your email address. If you do not get an email straight away, go to [https://github.com/settings/emails](https://github.com/settings/emails) and click resend**
 
-		![enter image description here](https://lh3.googleusercontent.com/dw7cyZjPlmwY0wgpdBkuDeGvX34GA2-kOjVJTAIgzk0_meqx6PXhcnWZGUX6X56ES8iAW_1-wSg)    
+		![enter image description here](https://lh3.googleusercontent.com/dw7cyZjPlmwY0wgpdBkuDeGvX34GA2-kOjVJTAIgzk0_meqx6PXhcnWZGUX6X56ES8iAW_1-wSg=s900)    
 
 -   I ALREADY have an account on GitHub: Continue to the next step.
     
@@ -59,7 +59,7 @@ Option 1 can get quite tedious when working consistently so we will be using the
 4.  Copy the entire output of the above command, including the _ssh-rsa_ at the start
 5.  Go to [https://github.com/settings/keys](https://github.com/settings/keys) and click **New SSH Key**
 6.  Enter *your name* or *your device's name* as the title and paste the key (copied in the above step) into the text field. It should look something like below  
-   ![enter image description here](https://lh3.googleusercontent.com/sKw2qrs9fNTKLYUFNMRlmOa14cSyLcSoafRL3A4G-bQuInPkL00BOht9FLiJIBwM7mYRoou8sx8)
+   ![enter image description here](https://lh3.googleusercontent.com/sKw2qrs9fNTKLYUFNMRlmOa14cSyLcSoafRL3A4G-bQuInPkL00BOht9FLiJIBwM7mYRoou8sx8=s700)
 
 **NOTE:** You will have to repeat this process if you change machines.
 
@@ -123,11 +123,11 @@ This is the process you will follow every lab to get your starter code.
 	**NOTE:** You won't be able to access the page if you have not accepted the invitation to join the organisation.
 2.  Select lab01 and click **Import**
 3.  Follow the link that is shown in the green banner flashed at the top of the screen to go to the place where the repo has been imported
-4.  Click on the "Clone or download" button.  
-![enter image description here](https://lh3.googleusercontent.com/fRKmSGm0qTZZnPtE70T9AR0CmhgQL-Jj5U7N1etS407LDClwFeaWWo8Xa6b8HEMSanANCvR0lDE)
+4.  Click on the **Clone or download** button.  
+![enter image description here](https://lh3.googleusercontent.com/fRKmSGm0qTZZnPtE70T9AR0CmhgQL-Jj5U7N1etS407LDClwFeaWWo8Xa6b8HEMSanANCvR0lDE=s900)
     
 5.  If the title for the dropdown box is _Clone with HTTPS_ click on the **Use SSH** link on the right. The box should look like the below  
-	![enter image description here](https://lh3.googleusercontent.com/8RM5PDX21n-QxcLDT0xWwLLNSfayAdpPrdU8K1JHIM6XQQX6brM3hXbUgcraUklT5G_AowslXOc)
+	![enter image description here](https://lh3.googleusercontent.com/8RM5PDX21n-QxcLDT0xWwLLNSfayAdpPrdU8K1JHIM6XQQX6brM3hXbUgcraUklT5G_AowslXOc=s900)
 
 6.  Copy the link in the text box
 7.  Open a Terminal and navigate to the folder you want the lab to be in
@@ -135,6 +135,13 @@ This is the process you will follow every lab to get your starter code.
 9.  Type `ls` to ensure the folder has been copied correctly
 10.  `cd [repo_name]` to navigate into the cloned repo
 11.  Type `ls` again to see the copied files.
+
+
+## Quick Tip: Viewing your Git history on GitHub
+GitHub provides a decent visualisation of your repo's commit history, which you can access at `Your Repo > Insights > Network` as shown below. Your initial history will look different to what is displayed here, but watch it evolve as you walkthrough each of the steps below (refresh the page after every `push` command).
+
+![enter image description here](https://lh3.googleusercontent.com/ofv9enc4hV8M4PULkT5R9kSHsNmoqjaXzWMZ_CaEgHRNlfGScCrscn_gmbYAHkZrKZrTkCtL2Gk=s900)
+I61yIiD4QDZ1cQzy5qJm7ngeskOrTuH5cvYeEYjHZp3rLQfdwAcArH1hSHVwyRkY_5E7DZujOL4)
 
 ## 2\. Make your first commit
 
@@ -166,7 +173,7 @@ git commit -m "Added a line to the first file"
 git push
 ```
 
-4.  MAKE SURE YOU UNDERSTAND THE PURPOSE OF EACH OF THE 3 ABOVE COMMANDS! If you are unsure about any of them, ask your tutor.
+4.  MAKE SURE YOU UNDERSTAND THE PURPOSE OF EACH OF THE 3 ABOVE COMMANDS! If you are unsure about any of them, ask your tutor or rewatch the tutorial videos.
 5.  Go back to GitHub and confirm that your changes have been pushed to the server.
 
 ## 3\. Do your first pull
@@ -184,8 +191,8 @@ Unfortunately, at the moment you are just working individually. But GitHub still
 1.  View your repo on GitHub.
 2.  Click on the `first.txt` file
 3.  Click the small 'edit' pencil icon in the top right
-4.  Make any change you want to this file and click the 'Commit Changes' button at the bottom of the screen
-5.  This will have changed the `first.txt` file on the server but not on your local environment. To fetch these changes use the `git pull` command from your terminal
+4.  Make any change you want to this file and click the **Commit Changes** button at the bottom of the screen
+5.  This will have changed the `first.txt` file on the server but not on your local environment (check it!). To fetch these changes use the `git pull` command from your terminal
 6.  Confirm that your version of `first.txt` now has the changes you made on the web page
 
 ## 4\. Create your first branch
@@ -247,13 +254,16 @@ For this step we will engineer one so you can get a taste of what they are, how 
 
 **Summary:** (All commands have been presented above)
 
-1.  Add a line to the top of the `first.txt` file
+1.  Add a line to the top of the `first.txt` file (on *master branch*)
 2.  Add, commit and push your changes
 3.  Switch to your _first\_new\_branch_
 4.  Add a different line to the top of the `first.txt` file
 5.  Add, commit and push your changes
 6.  Merge master into your current branch
-7.  This sequence of steps should made a merge conflict at the top of the `first.txt`
+7.  This sequence of steps should made a merge conflict at the top of the `first.txt` with the following output
+`Auto-merging first.txt`
+``CONFLICT (content): Merge conflict in first.txt``
+``Automatic merge failed; fix conflicts and then commit the result.``
 
 ## 7\. Resolve your merge conflict :)
 
@@ -294,6 +304,9 @@ We would then just commit the resolved file and the merge conflict is finished!
 1.  Open the `first.txt` file and decide which (or both) changes you want to keep
 2.  Remove the merge conflict syntax
 3.  Add, commit and push the resolved merge conflict
+4. en up `first.txt` on *master* branch - you see that mMerging *master* branch into *first_new_branch* has only affected *first_new_branch*.
+5. Now, merge *first_new_branch* into *master* to synchronise the two branches (this step should not cause any conflicts), then push the changes.
+6. Check your git history visualisation on GitHub :)
 
 ## Testing
 
@@ -309,11 +322,16 @@ You can run the `test_git.sh` file to check whether you have done most of the gi
 ## 0\. Setup
 To proceed to the second part of this lab, you must first install **python version 3.6**. You are required to use this version of python for all of your coursework in COMP1531 (DO NOT use python 3.7 or later versions)
 
-1. Watch the first 2 videos on python installation and python basics by Anna from [here](https://drive.google.com/open?id=1uJu0Xp_4APu3WXCFMBw-4yCZ1QlI3F8f)
-2. Follow the instructions in the first video to install **python 3.6**
-	* For Mac users:  ``brew install python3.6``
-3. Create a new branch called `python_exercises` to complete the following exercises. Remember to **merge back into master** when you are finished.
+1. Watch the videos on python installation and python basics by Anna from [here](https://drive.google.com/open?id=1uJu0Xp_4APu3WXCFMBw-4yCZ1QlI3F8f)
+2. Follow the instructions in the first video to install **python 3.6** (for Mac users, see below)
+3. Check that you have 
+4. Create a new branch called `python_exercises` to complete the following exercises. Remember to **merge back into master** when you are finished.
 
+
+Installation for **Mac** users:  
+ 1. Go to https://www.python.org/downloads/release/python-368/
+ 2. Scroll down to **Files** section  and download the installer appropriate for your OS version
+ 3. Open the installer and follow its instructions
 
 ## 1\. Hello World (1 mark)
 
@@ -431,3 +449,4 @@ python3 fib.py
 If nothing shows up and the program finishes, then all the tests have passed! Otherwise, test failure output will appear, and you should read through this test output to understand where you went wrong.
 
 These exercises are bonuses intended for those of you who have some previous programming experience.
+
