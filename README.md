@@ -1,7 +1,4 @@
-﻿# Lab 01
-
-
-# Introduction to GitHub
+﻿# Lab 01 - Introduction to Git & GitHub
 
 ## Aim
 
@@ -9,40 +6,48 @@
 2.  Get an introduction into how to use git effectively
 3.  Learn some basic python syntax/practices
 
-# Setup (Due: Prior to Wk 1 Lab)
+# Prelab  (Due: Prior to Wk 1 Lab)
+
+Before coming to your tutorials and labs, you must have completed the following tasks as a preparation.
+
+## 0\. Learn Git!
+Watch the following videos by Hussein to familiarise yourself with git
+
+[Git videos - Google Drive](https://drive.google.com/open?id=1IflPeCjdNpS_eWZnppn_d7wLK83OhUo3)
+
 
 ## 1\. Sign up for GitHub
 
-Github is a version control platform (like Bitbucket or GitLab) that uses git. It is a great way for developers to collaborate with one another. It will be the primary source of starter code distribution as well as where you will submit labs/assignments before being marked by your tutors. You will have to create an account here before you can start. Getting familiar with Github and how to use it is the aim of this lab.
+GitHub is a version control platform (like Bitbucket or GitLab) that uses git. It is a great way for developers to collaborate with one another. It will be the primary source of starter code distribution as well as where you will submit labs/assignments before being marked by your tutors. You will have to create an account here before you can start. Getting familiar with GitHub and how to use it is the aim of this lab.
 
 **Instructions:**
 
--   I DON’T have an account on Github: Create an account at Github using either your student email ([zID@student.unsw.edu.au](mailto:zID@student.unsw.edu.au)) or your personal email.
+-   I DON'T have an account on GitHub: Create an account at GitHub using either your student email ([zID@student.unsw.edu.au](mailto:zID@student.unsw.edu.au)) or your personal email.
     
     -   **Make sure to verify your email address. If you do not get an email straight away, go to [https://github.com/settings/emails](https://github.com/settings/emails) and click resend**
 
 		![enter image description here](https://lh3.googleusercontent.com/dw7cyZjPlmwY0wgpdBkuDeGvX34GA2-kOjVJTAIgzk0_meqx6PXhcnWZGUX6X56ES8iAW_1-wSg)    
 
--   I ALREADY have an account on Github: Continue to the next step.
+-   I ALREADY have an account on GitHub: Continue to the next step.
     
 
 
-## 2\. CS1531 Github Organisation Membership
+## 2\. CS1531 GitHub Organisation Membership
 
-A Github organisation is a way that people can work together and have group ownership of repositories. You will be added to our organisation where we will release the starter code and solutions.
+A GitHub organisation is a way that people can work together and have group ownership of repositories. You will be added to our organisation where we will release the starter code and solutions.
 
 **Instructions:**
 
-1. Follow the link and sign in. First with your cse credentials (if the _Authentication required_ alert box is shown), then click the **Sign in to Github** button and use your Github credentials [https://cgi.cse.unsw.edu.au/~cs1531/github/run.cgi/login](https://cgi.cse.unsw.edu.au/~cs1531/github/run.cgi/login)
-2. Go to https://github.com/orgs/cs1531/invitation to accept the invitation to join the organisation
-3. Click "Join COMP1531" and you should now be part of the organisation :)
+1. Follow the link and sign in. First with your cse credentials (if the _Authentication required_ alert box is shown), then click the **Sign in to GitHub** button and use your GitHub credentials [https://cgi.cse.unsw.edu.au/~cs1531/github/run.cgi/login](https://cgi.cse.unsw.edu.au/~cs1531/github/run.cgi/login)
+2. Go to https://github.com/orgs/cs1531/invitation to accept the invitation to join the organisation (invitation may take up to few minutes)
+3. Click **Join COMP1531** and you should now be part of the organisation :)
 
 ## 3\. Add your ssh key
 
-There are two ways to authenticate with Github when you are working on your own machine:
+There are two ways to authenticate with GitHub when you are working on your own machine:
 
 1.  Use your username and password every time
-2.  Authenticate using your SSH key which effectively links a certain machine to Github
+2.  Authenticate using your SSH key which effectively links a certain machine to GitHub
 
 Option 1 can get quite tedious when working consistently so we will be using the second option. Open up a terminal and run the following commands in terminal (*use the email you have used for GitHub*):
 
@@ -53,16 +58,21 @@ Option 1 can get quite tedious when working consistently so we will be using the
 3.  `cat ~/.ssh/id_rsa.pub`
 4.  Copy the entire output of the above command, including the _ssh-rsa_ at the start
 5.  Go to [https://github.com/settings/keys](https://github.com/settings/keys) and click **New SSH Key**
-6.  Enter your name or your device's name as the title and paste the key (copied in the above step) into the text field. It should look something like below  
+6.  Enter *your name* or *your device's name* as the title and paste the key (copied in the above step) into the text field. It should look something like below  
    ![enter image description here](https://lh3.googleusercontent.com/sKw2qrs9fNTKLYUFNMRlmOa14cSyLcSoafRL3A4G-bQuInPkL00BOht9FLiJIBwM7mYRoou8sx8)
 
 **NOTE:** You will have to repeat this process if you change machines.
 
+
+
+<br/>
+<br/>
+
 # Week 01 Lab Instructions
 
-**This lab must be completed and solution must be uploaded to GitHub by Sunday, 11:59pm, end of week 01. Tutors will check the time-stamp, when the lab is marked in week 02 lab session. Tasks in this lab must be completed individually.**
+**This lab must be completed and solution must be uploaded to GitHub by 24th Feb, 11:59pm (Sunday, end of week 01). Tutors will check the timestamp, when the lab is marked in week 02 lab session. Tasks in this lab must be completed individually.**
 
-## Github Exercises (5 marks)
+# PART 1 - GitHub Exercises (5 marks)
 
 ## 0\. Install git
 
@@ -103,7 +113,7 @@ git config --global user.email "github_email@example.com"
 
 Cloning a **repo** (a repo is just a directory that is linked with git) is how the codebase is linked from GitHub to your local computer so changes you make can be saved and shared with others. It is the final step before you can start making changes and contributing. A repo can be cloned at any time by someone who has access, so they can start working whenever they want. When a repo is cloned, all code that is uploaded on the server is copied to a desired location on your local machine.
 
-In this course, starter code will be distributed through [https://cgi.cse.unsw.edu.au/~cs1531/github/run.cgi/labs](https://cgi.cse.unsw.edu.au/~cs1531/github/run.cgi/labs). As labs get released, the dropdown menu will populate with starter code options. When you select one and the starter code will be imported to your local github account.
+In this course, starter code will be distributed through [https://cgi.cse.unsw.edu.au/~cs1531/github/run.cgi/labs](https://cgi.cse.unsw.edu.au/~cs1531/github/run.cgi/labs). As labs get released, the dropdown menu will populate with starter code options. When you select one and the starter code will be imported to your local GitHub account.
 
 This is the process you will follow every lab to get your starter code.
 
@@ -113,7 +123,7 @@ This is the process you will follow every lab to get your starter code.
 	**NOTE:** You won't be able to access the page if you have not accepted the invitation to join the organisation.
 2.  Select lab01 and click **Import**
 3.  Follow the link that is shown in the green banner flashed at the top of the screen to go to the place where the repo has been imported
-4.  Click on the Clone or download button.  
+4.  Click on the "Clone or download" button.  
 ![enter image description here](https://lh3.googleusercontent.com/fRKmSGm0qTZZnPtE70T9AR0CmhgQL-Jj5U7N1etS407LDClwFeaWWo8Xa6b8HEMSanANCvR0lDE)
     
 5.  If the title for the dropdown box is _Clone with HTTPS_ click on the **Use SSH** link on the right. The box should look like the below  
@@ -130,9 +140,9 @@ This is the process you will follow every lab to get your starter code.
 
 Now that you have cloned the repo, you are ready to work on the codebase locally.
 
-A commit is an update of the remote (on the GitHub’s server) state of the repository. It saves changes that you have made and can be given a message to describe those changes. A good use of git involves a lot of commits with detailed messages.
+A commit is an update of the remote (on the GitHub's server) state of the repository. It saves changes that you have made and can be given a message to describe those changes. A good use of git involves a lot of commits with detailed messages.
 
-Before you can commit, you have to do what is called staging your changes, which effectively tells git what changes you actually want to commit and what changes you don’t at the moment.
+Before you can commit, you have to do what is called staging your changes, which effectively tells git what changes you actually want to commit and what changes you don't at the moment.
 
 Commits are often followed by pushing which is how git actually uploads your commits to the remote server.
 
@@ -163,7 +173,7 @@ git push
 
 Usually when you are using git, it is in a team. That means that you will not be the only one who is making the changes. If someone else makes a change and pushes it to the server, your local repo will not have the most up to date version of the files. Luckily, git makes it easy to update our local copy with the `git pull` command.
 
-This command checks the remote server that your local repo is linked to and makes sure that all of your files are up to date. This ensures that you don’t accidentally do things like implement the same thing someone else has already done and also lets you use other peoples work (eg new functions) when developing.
+This command checks the remote server that your local repo is linked to and makes sure that all of your files are up to date. This ensures that you don't accidentally do things like implement the same thing someone else has already done and also lets you use other peoples work (eg new functions) when developing.
 
 Pulling regularly is one of the **most important** practices in git!
 
@@ -171,10 +181,10 @@ Unfortunately, at the moment you are just working individually. But GitHub still
 
 **Summary:**
 
-1.  View your repo on GitHub. (The same link as step 1 in section 1 of the Laboratory activities)
+1.  View your repo on GitHub.
 2.  Click on the `first.txt` file
-3.  Click the small ‘edit’ pencil icon in the top right
-4.  Make any change you want to this file and click the ‘Commit Changes’ button at the bottom of the screen
+3.  Click the small 'edit' pencil icon in the top right
+4.  Make any change you want to this file and click the 'Commit Changes' button at the bottom of the screen
 5.  This will have changed the `first.txt` file on the server but not on your local environment. To fetch these changes use the `git pull` command from your terminal
 6.  Confirm that your version of `first.txt` now has the changes you made on the web page
 
@@ -200,7 +210,7 @@ git checkout [branch_name]        # Switch to an existing branch
 4.  Try to push your changes to the server using the commands you learnt in the _Make your first commit_ section
 5.  The above step should have given you the following error:  
     — `fatal: The current branch first_new_branch has no upstream branch.`  
-    This means that the branch you tried to make a change on doesn’t exist on the server yet which makes sense because we only created it on our local machine.
+    This means that the branch you tried to make a change on doesn't exist on the server yet which makes sense because we only created it on our local machine.
 6.  To fix this, we need to add a copy of our branch on the server and link them up so git knows that this new branch maps to a corresponding branch on the server
 7.  `git push -u origin first_new_branch`
 
@@ -247,7 +257,7 @@ For this step we will engineer one so you can get a taste of what they are, how 
 
 ## 7\. Resolve your merge conflict :)
 
-Resolving a merge conflict is as simple as editing the file normally, choosing what you want to have in the places git wasn’t sure.
+Resolving a merge conflict is as simple as editing the file normally, choosing what you want to have in the places git wasn't sure.
 
 This is a very simple example, but merge conflicts can be large and in many different places across a file/repo. If possible, avoid merge conflicts. This can be done by regularly pulling from the server to update your local copy and by making your branches in such a way that they handle only one feature/section of the code.
 
@@ -256,8 +266,7 @@ A merge conflict is physically shown in the file in which it occurs.
 `=======` marks the beginning of the conflicting changes made on the **target** (merged) branch.  
 `>>>>>>>` marks the end of the conflict zone.
 
-Eg
-
+E.g.,
 ```
 This line could be merged automatically.
 There was no change here either
@@ -290,13 +299,25 @@ We would then just commit the resolved file and the merge conflict is finished!
 
 You can run the `test_git.sh` file to check whether you have done most of the git exercises. Make sure you checkout the master branch before running this script.
 
-# Python Introduction
 
-Create a new branch called `python_exercises` to complete the following exercises. Remember to merge back into master when you are finished.
+
+<br/>
+<br/>
+
+# PART 2 - Python Introduction (5 marks + 2 bonus)
+
+## 0\. Setup
+To proceed to the second part of this lab, you must first install **python version 3.6**. You are required to use this version of python for all of your coursework in COMP1531 (DO NOT use python 3.7 or later versions)
+
+1. Watch the first 2 videos on python installation and python basics by Anna from [here](https://drive.google.com/open?id=1uJu0Xp_4APu3WXCFMBw-4yCZ1QlI3F8f)
+2. Follow the instructions in the first video to install **python 3.6**
+	* For Mac users:  ``brew install python3.6``
+3. Create a new branch called `python_exercises` to complete the following exercises. Remember to **merge back into master** when you are finished.
+
 
 ## 1\. Hello World (1 mark)
 
-You have been introduced to python in week 1 so we will just get familiar with creating and running simple python programs. Python is an interpreted language so does not require and compilation like C does. That means executing python programs is as simple as one command.
+You have been introduced to python in week 1 so we will just get familiar with creating and running simple python programs. Python is an interpreted language so does not require compilation like C does. That means executing python programs is as simple as one command.
 
 **Summary:**
 
@@ -327,11 +348,11 @@ We will use a list to add up some integers in this exercise. (HINT: the python d
 print(sum(integers))
 ```
 
-5.  Note that the answers should be the same. This is an example of one of python’s inbuilt functions. The lesson here is if you are doing something that you feel like is something that a lot of people would have wanted to do before you (like adding a list of numbers), python probably has a way to do it already. CHECK THE DOCS!
+5.  Note that the answers should be the same. This is an example of one of python's inbuilt functions. The lesson here is if you are doing something that you feel like is something that a lot of people would have wanted to do before you (like adding a list of numbers), python probably has a way to do it already. CHECK THE DOCS!
 
 ## 3\. List of Strings (2 marks)
 
-Strings in python are far simpler than int C (char*) and can be used like any other variable (ie added to lists). They also have a lot of in built functionality like concatenation (appending one string to another) and making all characters lower case.
+Strings in python are far simpler than int C (char*) and can be used like any other variable (i.e., added to lists). They also have a lot of in built functionality like concatenation (appending one string to another) and making all characters lower case.
 
 Strings can be indexed from with both positive indexes. Positive indexes work like you would expect, starting at 0 and ending at the length of the string. Negative indexes start at -1 and work their way from the back. Note that strings in python are not null terminated.
 
@@ -363,7 +384,7 @@ Note that there is **NO** trailing space in the output.
 
 1.  Open the `strings.py` file
 2.  Use a `for` loop to join all of the strings, separated by a space
-3.  Print the new string such that the output matches the above (No trailing space in output)
+3.  Print the new string such that the output matches the above (no trailing space in output)
 4.  Now concatenating a list of strings seems like something that people would want to do often. So, as you may have been suspecting after the previous exercise, there is an in-built function to do this for you. Add the following line to the bottom of your `strings.py` file
 
 ```python
@@ -387,16 +408,19 @@ The `test.sh` file is a combination of both the python and the git test scripts.
 ./test.sh
 ```
 
-# Show your tutor and finish
+## Show your tutor and finish
 
-That’s it for the first lab, please show your tutor your work and get them to mark you off.
+That's it for the first lab, please show your tutor your work and get them to mark you off.
 
-# Optional Exercises for Bonus (Due: In Wk 1 Lab) (1 mark)
+
+<br/>
+
+## Optional Exercises for Bonus (2 marks)
 
 There are 2 optional exercises in the files
 
 1.  `fib.py` \- you produce a list of fibannaci numbers of size n, where n is provided
-2.  `commandLineCalc_easy.py` \- you use the Python3 `eval` function to calculate a basic mathematical expression containing addition/subtraction/multiplication/division/exponentiation. You have to filter invalid input to prevent cross-side scripting
+2.  `commandLineCalc_easy.py` \- you use the Python3's `eval` function to calculate a basic mathematical expression containing addition/subtraction/multiplication/division/exponentiation. You have to filter invalid input to prevent cross-side scripting
 
 For each of these files, run it as a program in the following fashion
 
