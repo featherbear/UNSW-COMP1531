@@ -20,8 +20,16 @@ def produceFibsList(n):
     >>> produceFibsList(5)
     [1, 1, 2, 3, 5]
     '''
-    # TODO = fill in the code here, and return the correct result using the return keyword
-    pass
+    result = []
+    if n >= 1: result.append(1)
+    if n >= 2: result.append(1)
+
+    i = 2
+    while i < n:
+      result.append(result[i-1] + result[i-2])
+      i += 1
+
+    return result
 
 if __name__ == '__main__':
     import doctest

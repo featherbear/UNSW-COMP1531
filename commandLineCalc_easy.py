@@ -25,8 +25,8 @@ def calculate(s):
     1
     >>> calculate(\'print("bad guy coming to hack")\')
     '''
-    # TODO = fill in this function
-    pass
+    import re
+    return eval(s) if re.search("^[0-9+\-*/() ]*$", s) else None
 
 if __name__ == '__main__':
     import doctest
