@@ -25,7 +25,8 @@ fib_dict = {
 # Do not print it from this function
 def fib_sequence(num):
 	
-	# TODO fill in this part
+	if num not in fib_dict:
+	  fib_dict[num] = fib_sequence(num-1) + fib_sequence(num-2)
 
 	return fib_dict[num]
 
