@@ -7,6 +7,19 @@
 
 <br/>
 
+
+# Python Videos
+Familiarise yourself with Object Oriented concepts and programming with more Python videos by Anna:
+
+<span>8. </span> [OOP and Encapsulation](https://youtu.be/f3PA7LveBOA)
+<span>9. </span> [Abstraction, inheritance, Abstract classes](https://youtu.be/7vuO3zEq3J4)
+<span>10. </span> [Aggregation and Composition](https://youtu.be/bPwGhF0n7q0) 
+<span>12. </span> [Pytest Intro](https://youtu.be/oPsuzDvwHgg)
+
+Or if you want to learn more, watch the whole [playlist](https://www.youtube.com/playlist?list=PLbSaCpDlfd6p1h87LKUWDa7TBGQhLYQXW)!
+
+
+
 # Lab Instructions
 
 ## PART 1 - Requirements Analysis (10 marks)
@@ -17,6 +30,8 @@ In this week's lab, you will be working on the same *AffordableCarRentals* case-
 This lab must be completed during your lab session and for this lab, you are expected to work in your **project group**. Just like your group assignment, every member of the group is required to contribute *equally* to this lab component.
 
 A copy of the case study has been provided below.
+
+<br/>
 
 
 ### Case-Study: Affordable Rentals
