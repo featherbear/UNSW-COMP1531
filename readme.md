@@ -1,5 +1,3 @@
-﻿lab03.html
-
 # Lab 03_04 (20 marks + 2 bonus)
 
 ## Due Dates
