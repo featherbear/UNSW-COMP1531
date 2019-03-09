@@ -1,0 +1,15 @@
+<div class="python">
+{{ if .IsNamedParams }}
+{{ if eq (.Get "show") "true" }}
+<pre>{{.Inner}}</pre>
+{{ end }}
+{{ end }}
+<!-- 
+{{ with .Get "interactive" }}
+  {{.}}
+{{ end }}
+-->
+<script type="text/python">
+{{.Inner}}
+</script>
+</div>
