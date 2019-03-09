@@ -3,6 +3,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/uml-class-diagram/</loc>
+    <lastmod>2019-03-09T21:58:24+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/object-oriented-design/</loc>
+    <lastmod>2019-03-09T21:43:28+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/uml-use-case-diagram/</loc>
+    <lastmod>2019-03-09T21:27:22+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/uml-domain-modelling/</loc>
+    <lastmod>2019-03-09T20:50:48+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/lab03_04/</loc>
+    <lastmod>2019-03-04T15:37:59+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/unified-modelling-language/</loc>
+    <lastmod>2019-02-27T15:00:02+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/requirements-specification/</loc>
+    <lastmod>2019-02-26T16:10:52+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/lab02/</loc>
+    <lastmod>2019-02-25T14:25:58+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/user-stories/</loc>
+    <lastmod>2019-02-25T13:16:03+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/intro-to-python/</loc>
+    <lastmod>2019-02-20T14:54:44+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/flask-toolkit/</loc>
+    <lastmod>2019-02-19T16:36:00+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/software-development-approaches/</loc>
+    <lastmod>2019-02-19T16:26:26+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/software-development-lifecycle/</loc>
+    <lastmod>2019-02-19T16:07:57+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/intro-to-software-engineering/</loc>
+    <lastmod>2019-02-19T16:06:40+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/brython/</loc>
+    <lastmod>2019-02-12T21:14:42+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/git-cheatsheet/</loc>
     <lastmod>2019-02-12T18:09:43+11:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,27 +115,56 @@
   </url>
   
   <url>
+    <loc>/categories/behaviour-diagrams/</loc>
+    <lastmod>2019-03-09T21:27:22+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2019-02-12T18:09:43+11:00</lastmod>
+    <lastmod>2019-03-09T21:58:24+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2019-03-09T21:27:22+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/info/</loc>
+    <lastmod>2019-02-20T14:54:44+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-02-12T18:09:43+11:00</lastmod>
+    <lastmod>2019-03-09T21:58:24+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/structural-diagrams/</loc>
+    <lastmod>2019-03-09T21:58:24+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/uml/</loc>
+    <lastmod>2019-03-09T21:58:24+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

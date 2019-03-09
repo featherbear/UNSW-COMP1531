@@ -7,10 +7,145 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Tue, 12 Feb 2019 18:09:43 +1100</lastBuildDate>
+    <lastBuildDate>Sat, 09 Mar 2019 21:58:24 +1100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[UML] Class Diagram</title>
+      <link>/post/uml-class-diagram/</link>
+      <pubDate>Sat, 09 Mar 2019 21:58:24 +1100</pubDate>
+      
+      <guid>/post/uml-class-diagram/</guid>
+      <description>Class    CLASS NAME     -Attribute_1: type</description>
+    </item>
+    
+    <item>
+      <title>Object Oriented Design</title>
+      <link>/post/object-oriented-design/</link>
+      <pubDate>Sat, 09 Mar 2019 21:43:28 +1100</pubDate>
+      
+      <guid>/post/object-oriented-design/</guid>
+      <description>Object Oriented Programing is a design paradigm (approach) where data is assigned to a discrete object.</description>
+    </item>
+    
+    <item>
+      <title>[UML] Use Case Diagram</title>
+      <link>/post/uml-use-case-diagram/</link>
+      <pubDate>Sat, 09 Mar 2019 21:27:22 +1100</pubDate>
+      
+      <guid>/post/uml-use-case-diagram/</guid>
+      <description>Each solid line represents an interaction between an actor and the system</description>
+    </item>
+    
+    <item>
+      <title>[UML] Domain Modelling</title>
+      <link>/post/uml-domain-modelling/</link>
+      <pubDate>Sat, 09 Mar 2019 20:50:48 +1100</pubDate>
+      
+      <guid>/post/uml-domain-modelling/</guid>
+      <description>Domain Model Also referred to as a conceptual model or domain object model</description>
+    </item>
+    
+    <item>
+      <title>Lab 3 &amp; 4</title>
+      <link>/post/lab03_04/</link>
+      <pubDate>Mon, 04 Mar 2019 15:37:59 +1100</pubDate>
+      
+      <guid>/post/lab03_04/</guid>
+      <description>Question One    Actors Goals Use-case Name     Customer To find a preferred car Search   Customer To adjust search criteria    Customer To fill in all required personal details Update details   Customer To make payment for selected car Make payment   Admin To enter new car information into the system Add new cars   Manager To generate an overview report a week Generate report    Question Two   [draw.</description>
+    </item>
+    
+    <item>
+      <title>Unified Modelling Language (UML)</title>
+      <link>/post/unified-modelling-language/</link>
+      <pubDate>Wed, 27 Feb 2019 15:00:02 +1100</pubDate>
+      
+      <guid>/post/unified-modelling-language/</guid>
+      <description>Unified Modelling Language is a widely adopted language to model software solutions, data structures, system behaviours and other processes.</description>
+    </item>
+    
+    <item>
+      <title>Requirements Specification</title>
+      <link>/post/requirements-specification/</link>
+      <pubDate>Tue, 26 Feb 2019 16:10:52 +1100</pubDate>
+      
+      <guid>/post/requirements-specification/</guid>
+      <description>What is a requirement?</description>
+    </item>
+    
+    <item>
+      <title>Lab 2 - User Stories Exercise</title>
+      <link>/post/lab02/</link>
+      <pubDate>Mon, 25 Feb 2019 14:25:58 +1100</pubDate>
+      
+      <guid>/post/lab02/</guid>
+      <description>Case-Study: Affordable Rentals  &amp;gt; See details AffordableRentals is a company specialising in car rentals to customers.</description>
+    </item>
+    
+    <item>
+      <title>User Stories</title>
+      <link>/post/user-stories/</link>
+      <pubDate>Mon, 25 Feb 2019 13:16:03 +1100</pubDate>
+      
+      <guid>/post/user-stories/</guid>
+      <description>User stories are development artifacts which provide feature requirements that the software has to conform to.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Python</title>
+      <link>/post/intro-to-python/</link>
+      <pubDate>Wed, 20 Feb 2019 14:54:44 +1100</pubDate>
+      
+      <guid>/post/intro-to-python/</guid>
+      <description>Python is a</description>
+    </item>
+    
+    <item>
+      <title>Flask Toolkit</title>
+      <link>/post/flask-toolkit/</link>
+      <pubDate>Tue, 19 Feb 2019 16:36:00 +1100</pubDate>
+      
+      <guid>/post/flask-toolkit/</guid>
+      <description>Basic application code 1 2 3 4 5 6  from flask import Flask app = Flask(__name__) @app.</description>
+    </item>
+    
+    <item>
+      <title>Software Development Approaches</title>
+      <link>/post/software-development-approaches/</link>
+      <pubDate>Tue, 19 Feb 2019 16:26:26 +1100</pubDate>
+      
+      <guid>/post/software-development-approaches/</guid>
+      <description>Waterfall Approach A very formal approach, where phases of the SDLC are carried out in a sequential manner</description>
+    </item>
+    
+    <item>
+      <title>Software Development Lifecycle</title>
+      <link>/post/software-development-lifecycle/</link>
+      <pubDate>Tue, 19 Feb 2019 16:07:57 +1100</pubDate>
+      
+      <guid>/post/software-development-lifecycle/</guid>
+      <description>Analysis aka &amp;lsquo;Problem domain&amp;rsquo; - Understanding the Problem</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Software Engineering</title>
+      <link>/post/intro-to-software-engineering/</link>
+      <pubDate>Tue, 19 Feb 2019 16:06:40 +1100</pubDate>
+      
+      <guid>/post/intro-to-software-engineering/</guid>
+      <description>Software Engineering is &amp;ldquo;the application of a systematic, disciplined, quantifiable approach to the development, operation and maintenance of software, and the study of these approaches; that is, the application of engineering to software&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Brython</title>
+      <link>/post/brython/</link>
+      <pubDate>Tue, 12 Feb 2019 21:14:42 +1100</pubDate>
+      
+      <guid>/post/brython/</guid>
+      <description>This page is my Brython playground!</description>
+    </item>
     
     <item>
       <title>Git Cheatsheet</title>
@@ -18,7 +153,7 @@
       <pubDate>Tue, 12 Feb 2019 18:09:43 +1100</pubDate>
       
       <guid>/post/git-cheatsheet/</guid>
-      <description>Git Basic Clone a repository $ git clone &amp;lt;repoURL&amp;gt;</description>
+      <description>Git Keywords  HEAD - Dynamic pointer to the latest comment of a branch Tracking Stage Commit Fast forward - move the pointer / vs recursive  Git Basic Basic Workflow  git add .</description>
     </item>
     
   </channel>

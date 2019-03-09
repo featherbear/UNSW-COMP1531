@@ -7,9 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
+    <lastBuildDate>Sat, 09 Mar 2019 21:27:22 +1100</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Behaviour Diagrams</title>
+      <link>/categories/behaviour-diagrams/</link>
+      <pubDate>Sat, 09 Mar 2019 21:27:22 +1100</pubDate>
+      
+      <guid>/categories/behaviour-diagrams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Info</title>
+      <link>/categories/info/</link>
+      <pubDate>Wed, 20 Feb 2019 14:54:44 +1100</pubDate>
+      
+      <guid>/categories/info/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structural Diagrams</title>
+      <link>/categories/structural-diagrams/</link>
+      <pubDate>Sat, 09 Mar 2019 21:58:24 +1100</pubDate>
+      
+      <guid>/categories/structural-diagrams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UML</title>
+      <link>/categories/uml/</link>
+      <pubDate>Sat, 09 Mar 2019 21:58:24 +1100</pubDate>
+      
+      <guid>/categories/uml/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
