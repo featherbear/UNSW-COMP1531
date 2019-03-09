@@ -3,6 +3,8 @@ title: "Git Cheatsheet"
 date: 2019-02-12T18:09:43+11:00
 description: "An unextensive list of commands for using Git"
 
+categories: ["Info"]
+
 hiddenFromHomePage: false
 postMetaInFooter: false
 
@@ -15,8 +17,21 @@ sequenceDiagrams:
   options: ""
 
 ---
+# Git Keywords
+* HEAD - Dynamic pointer to the latest comment of a branch
+* Tracking
+* Stage
+* Commit
+* Fast forward - move the pointer   / vs   recursive
 
 # Git Basic
+## Basic Workflow
+* `git add ...`
+* `git commit -m "your message here"`
+
+## Check Git status
+`$ git status`
+
 ## Clone a repository
 `$ git clone <repoURL>`
 
@@ -28,25 +43,54 @@ sequenceDiagrams:
 `$ git add <file1> <file2> <...>`  
 `$ git add .`
 
-## Commit stages files
+## Commit staged files
 `$ git commit -m <message>`  
+`$ git commit -a -m <message>` # Add and commit all modified  
 `$ git commit --amend`
+
+## View all commits
+`$ git log`
 
 ---
 
 # Git Branches
+Branches could be considered as pointers to commits
 ## Checkout a branch
 `$ git checkout <branch>`
 
 ## Checkout into a new branch
-`$ git checkout -b <branch>`
+`$ git checkout -b <branch>`  
+_Same as `git branch <branch>`, then `git checkout <branch>`_
 
 ## Create a new branch but don&apos;t checkout
 `$ git branch <branch>`
 
+## Delte a branch
+`$ git branch -d <branch>`
+
 ---
 
-# Extra
+# Git Merging
+_From the branch you want merge into_  
+`git merge <branch>`
+
+Resolving commits  
+1)  
+`cd {master}`  
+`git merge <branch>` # Creates conflict file  
+\<Manually modify>  
+`git commit`
+
+2)  
+`cd {branch}`  
+`git merge <master>`  
+
+# Remote
+`$ git remote add <remoteName> <remoteURL>`
+
+`$ git push <remoteName> <branch>`
+
+# Other Stuff
 
 ## Merge unrelated respositories
 > Useful for me to merge the private lab repositories from this course to my own repo.
@@ -64,7 +108,7 @@ git commit -a -m "Move lab into correct repo folder"
 git remote add lab<n> <lab_folder>
 git fetch lab<n>
 git merge -S --allow-unrelated-histories lab<n>/master
-git remove rm lab<n>
+git remote rm lab<n>
 ```
 
 
