@@ -59,3 +59,4 @@ _(ie the leg of a desk)_
 ---
 
 ![](20190306_144140.jpg)
+![](sketch.png)

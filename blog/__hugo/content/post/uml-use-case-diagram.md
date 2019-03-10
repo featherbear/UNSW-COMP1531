@@ -44,3 +44,7 @@ Syntax: Dotted line FROM the extension, TO the main functionality
 
 Dotted line (with arrow) from primary to secondary case 
 
+---
+
+![](use case.png)
+

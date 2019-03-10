@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/quiz01/</loc>
+    <lastmod>2019-03-10T14:51:41+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/uml-class-diagram/</loc>
     <lastmod>2019-03-09T21:58:24+11:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -115,6 +122,13 @@
   </url>
   
   <url>
+    <loc>/categories/assessments/</loc>
+    <lastmod>2019-03-10T14:51:41+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/behaviour-diagrams/</loc>
     <lastmod>2019-03-09T21:27:22+11:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -123,14 +137,14 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-03-09T21:58:24+11:00</lastmod>
+    <lastmod>2019-03-10T14:51:41+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-03-09T21:27:22+11:00</lastmod>
+    <lastmod>2019-03-10T14:51:41+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -144,7 +158,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-03-09T21:58:24+11:00</lastmod>
+    <lastmod>2019-03-10T14:51:41+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

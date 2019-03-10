@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Sat, 09 Mar 2019 21:58:24 +1100</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2019 14:51:41 +1100</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Quiz 01</title>
+      <link>/post/quiz01/</link>
+      <pubDate>Sun, 10 Mar 2019 14:51:41 +1100</pubDate>
+      
+      <guid>/post/quiz01/</guid>
+      <description>Question One The role of a software engineer is to:</description>
+    </item>
     
     <item>
       <title>[UML] Class Diagram</title>
