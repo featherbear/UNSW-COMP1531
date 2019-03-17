@@ -1,3 +1,5 @@
+from booking import Booking
+
 class CarRentalSystem():
 
     def __init__(self):
@@ -6,8 +8,12 @@ class CarRentalSystem():
         self._bookings  = []
 
     def make_booking(self, customer, car, period, location):
-        # implement this function
-        pass
+        booking = Booking(customer, car, period, location)
+        self._bookings.append(booking)
+        
+        print("=== Booking Successful! ===")
+        print(booking)
+        print("=== Thank you for using Affordable Rentals ===")
 
     def get_customer(self, licence):
         for customer in self._customers:
