@@ -58,7 +58,7 @@ CRS.make_booking(customer, car, 12, Location("Earth", "Moon"))
 
 print("\n\n~~~ Print all bookings ~~~")
 for booking in CRS.bookings:
-  print(booking)
+  print(booking, end="\n\n")
 
 ######################################################
 # Do our own tests
