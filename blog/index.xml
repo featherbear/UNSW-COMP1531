@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Sun, 10 Mar 2019 14:51:41 +1100</lastBuildDate>
+    <lastBuildDate>Wed, 13 Mar 2019 14:54:22 +1100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python Getter/Setter Methods</title>
+      <link>/post/python-getter-setter-methods/</link>
+      <pubDate>Wed, 13 Mar 2019 14:54:22 +1100</pubDate>
+      
+      <guid>/post/python-getter-setter-methods/</guid>
+      <description>Setters and getters are implentations of Object Oriented designs where encapsulated data are exposed from the object.</description>
+    </item>
     
     <item>
       <title>Quiz 01</title>
@@ -63,7 +72,7 @@
       <pubDate>Mon, 04 Mar 2019 15:37:59 +1100</pubDate>
       
       <guid>/post/lab03_04/</guid>
-      <description>Question One    Actors Goals Use-case Name     Customer To find a preferred car Search   Customer To adjust search criteria    Customer To fill in all required personal details Update details   Customer To make payment for selected car Make payment   Admin To enter new car information into the system Add new cars   Manager To generate an overview report a week Generate report    Question Two   [draw.</description>
+      <description>Actors and Goals    Actors Goals Use-case Name     Customer To find a preferred car Search   Customer To adjust search criteria    Customer To fill in all required personal details Update details   Customer To make payment for selected car Make payment   Admin To enter new car information into the system Add new cars   Manager To generate an overview report a week Generate report    Use Case Diagram   [draw.</description>
     </item>
     
     <item>
