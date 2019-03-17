@@ -129,6 +129,7 @@ assert(car.calculatePrice(8) == 8 * rate * 0.95)
 print("\n\n> Calculate price for a premium car rental")
 car = PremiumCar("/make/", "/model/", "/year/", "/rego/")
 rate = car.rate
+print("    Test for 15% tariff all premium car rentals")
 assert(car.calculatePrice(1) == 1 * rate * 1.15)
 assert(car.calculatePrice(2) == 2 * rate * 1.15)
 assert(car.calculatePrice(3) == 3 * rate * 1.15)
