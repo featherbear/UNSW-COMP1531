@@ -24,6 +24,10 @@ class Booking: # Car Rental
   @property
   def price(self):
     return self._price
-    
+  
+  @property
+  def location(self):
+    return self._location
+
   def __str__(self):
     return f"Made by {self._customer}\nReserve {self._car} for {self._period} days\nLocations: {self._location}\nTotal fee: ${self._price:.2f}"
