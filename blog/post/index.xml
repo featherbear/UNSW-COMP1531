@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Mon, 18 Mar 2019 13:23:51 +1100</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2019 14:00:00 +1100</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python - Exceptions and Exception Handling</title>
+      <link>/post/python-exceptions-and-exception-handling/</link>
+      <pubDate>Tue, 19 Mar 2019 14:00:00 +1100</pubDate>
+      
+      <guid>/post/python-exceptions-and-exception-handling/</guid>
+      <description>Exceptions A Python exception is a runtime error signal that indicates a event.</description>
+    </item>
     
     <item>
       <title>Python - Testing With `pytest`</title>
@@ -22,7 +31,7 @@
     </item>
     
     <item>
-      <title>Python Getter/Setter Methods</title>
+      <title>Python - Getter/Setter Methods</title>
       <link>/post/python-getter-setter-methods/</link>
       <pubDate>Wed, 13 Mar 2019 14:54:22 +1100</pubDate>
       
@@ -36,7 +45,7 @@
       <pubDate>Sun, 10 Mar 2019 14:51:41 +1100</pubDate>
       
       <guid>/post/quiz01/</guid>
-      <description>Question One The role of a software engineer is to:</description>
+      <description>Disclaimer: These are my answers, not official answers.</description>
     </item>
     
     <item>

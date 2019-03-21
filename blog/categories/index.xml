@@ -33,9 +33,18 @@
     <item>
       <title>Info</title>
       <link>/categories/info/</link>
-      <pubDate>Wed, 20 Feb 2019 14:54:44 +1100</pubDate>
+      <pubDate>Sat, 09 Mar 2019 21:43:28 +1100</pubDate>
       
       <guid>/categories/info/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/categories/python/</link>
+      <pubDate>Tue, 19 Mar 2019 14:00:00 +1100</pubDate>
+      
+      <guid>/categories/python/</guid>
       <description></description>
     </item>
     
