@@ -1,6 +1,8 @@
 ---
-title: "Python Getter/Setter Methods"
+title: "Python - Getter/Setter Methods"
 date: 2019-03-13T14:54:22+11:00
+
+categories: ["Python"]
 
 hiddenFromHomePage: false
 postMetaInFooter: false

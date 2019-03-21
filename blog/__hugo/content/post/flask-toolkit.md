@@ -2,7 +2,7 @@
 title: "Flask Toolkit"
 date: 2019-02-19T16:36:00+11:00
 
-categories: ["Info"]
+categories: ["Info", "Python"]
 
 description: ""
 hiddenFromHomePage: false

@@ -2,6 +2,8 @@
 title: "Object Oriented Design"
 date: 2019-03-09T21:43:28+11:00
 
+categories: ["Info"]
+
 hiddenFromHomePage: false
 postMetaInFooter: false
 

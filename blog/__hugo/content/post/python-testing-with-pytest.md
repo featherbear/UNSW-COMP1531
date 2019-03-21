@@ -2,6 +2,8 @@
 title: "Python - Testing With `pytest`"
 date: 2019-03-18T13:23:51+11:00
 
+categories: ["Python"]
+
 hiddenFromHomePage: false
 postMetaInFooter: false
 
@@ -36,3 +38,12 @@ class TestUS1():
 * Any python files that start with `test_` or end with `_test` are included by pytest
 * Any class that starts with `Test` are included by pytest
 * Any method that starts with `test_` are executed by `pytest`
+
+# Testing for Exceptions
+```python3
+with pytest.raises(ExceptionName):
+  doSomethingThatRaisesAnException
+```
+
+# Setup and Teardown
+ 

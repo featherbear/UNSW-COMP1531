@@ -2,7 +2,7 @@
 title: "Introduction to Python"
 date: 2019-02-20T14:54:44+11:00
 
-categories: ["Info"]
+categories: ["Info", "Python"]
 
 hiddenFromHomePage: false
 postMetaInFooter: false

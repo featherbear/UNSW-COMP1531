@@ -11,6 +11,9 @@ sequenceDiagrams:
   enable: false
   options: ""
 ---
+
+> Disclaimer: These are my answers, not official answers. Also multiple choice questions suck.
+
 # Question One
 The role of a software engineer is to:
 
