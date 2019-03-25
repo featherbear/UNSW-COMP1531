@@ -2,7 +2,7 @@
 title: "Mid-Semester  Exam"
 date: 2019-03-22T14:00:00+11:00
 categories: ["Assessments"]
-hiddenFromHomePage: true
+hiddenFromHomePage: false
 postMetaInFooter: false
 
 flowchartDiagrams:
