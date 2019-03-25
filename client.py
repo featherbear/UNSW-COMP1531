@@ -54,7 +54,6 @@ start_date      = f'{year1}-{month1}-{day1}'
 end_date        = f'{year2}-{month2}-{day2}'
 
 booking = system.make_booking(user, car, start_date, end_date,'Sydney', 'Canberra')
-print("fee: ", booking[0].fee)
 
 print('\n\n~~~ Make second booking ~~~')
 user = system.get_customer(2)
