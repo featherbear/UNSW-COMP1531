@@ -40,7 +40,11 @@ class CarRentalSystem():
         '''
         Task 2
         '''
-
+        try:
+          return next(filter(lambda car: car.rego == rego, self._cars))
+        except StopIteration:
+          return None
+          
     '''
     Booking Services
     '''
