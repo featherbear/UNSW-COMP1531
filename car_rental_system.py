@@ -49,18 +49,48 @@ class CarRentalSystem():
     Booking Services
     '''
 
-    def make_booking(self, customer, car, start_date,end_date, start_location,end_location):
+    def make_booking(self, customer, car, start_date, end_date, start_location, end_location):
         '''
         Task 3
         '''
-        pass
+        try:
+          start_date = datetime.strptime(start_date, "%Y-%m-%d")
+        except:
+          raise BookingError({'start_date': 'Invalid start date'})
+        
+        try:
+          end_date = datetime.strptime(end_date, "%Y-%m-%d")
+        except:
+          raise BookingError({'end_date': 'Invalid end date'})
+          
+        errors = check_booking_error(start_date, end_date, start_location, end_location)
+        if errors:
+          raise BookingError(errors)
+
+        period = (end_date - start_date).days + 1
+        booking = Booking(customer, car, period, Location(start_location, end_location))
+        car.add_booking(booking)
+        self._bookings.append(booking)
+        return [booking]
 
     def check_fee(self, customer, car, date1, date2, location1, location2):
         '''
         Task 4
         '''
-        pass
+        start_date = datetime.strptime(start_date, "%Y-%m-%d")
+        end_date = datetime.strptime(end_date, "%Y-%m-%d")
+       
+        try:
+          check_booking_error(start_date, end_date, start_location, end_location)
+        except BookingError as err:
+          print(err)
+          return
+
+        period = end_date - start_date
+        booking = Booking(customer, car, period.days, Location(start_location, end_location))
         
+        return booking.fee
+
     ''' 
         Registration Services
     '''

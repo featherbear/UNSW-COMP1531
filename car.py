@@ -10,6 +10,7 @@ class Car(ABC):
         self._bookings = []
 
     def add_booking(self, booking):
+        """ BUG? """
         self.bookings.append(booking)
 
     def calc_fee(self, period):
