@@ -17,8 +17,19 @@ class CarRentalSystem():
         '''
         Task 1
         '''
-        pass    
+        cars = self._cars
 
+        if not (name or model):
+          return cars
+
+        if name:
+          cars = filter(lambda car: car.name == name, cars)
+        
+        if model:
+          cars = filter(lambda car: car.model == model, cars)
+
+        return list(cars)
+        
     def get_customer(self, licence):
         for customer in self._customers:
             if customer.licence is licence:
