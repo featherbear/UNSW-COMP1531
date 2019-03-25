@@ -1,0 +1,5 @@
+{
+  "test_make_booking.py::test_successful_make_medium_car_booking_7_days_no_discount": true,
+  "test_make_booking.py::test_successful_make_smalal_car_booking": true,
+  "test_make_booking.py::test_successful_make_small_car_booking_7_days_no_discount": true
+}
