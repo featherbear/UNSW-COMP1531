@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>All Bookings</h1>
+
+
+<ul>
+{% for booking in bookings %}
+    <li><p style="white-space: pre;">{{ booking }}</p></li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+

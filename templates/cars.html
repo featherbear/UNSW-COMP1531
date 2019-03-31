@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>CARS</h1>
+<form method="POST">
+	<label>Make: </label><input name='make'/>
+	<label>Model:</label><input name='model'/>
+	<button type='submit'>Search</button>
+</form>
+
+<ul>
+{% if cars %}
+	{% for car in cars %}
+		<li><a href="{{url_for('car', rego=car.rego)}}">{{car.name}} {{car.model}}</a></li>
+	{% endfor %}
+{% else %}
+	No cars
+{% endif %}
+</ul>
+{% endblock %}
