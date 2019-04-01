@@ -70,6 +70,14 @@ class BookingForm():
             return self._other_errors.get(field_name) or ''
         return field.error or ''
 
+    @property
+    def errors(self):
+        errors = {}
+        errors.update(self._other_errors)
+        for field in self._fields:
+          errors[field.name] = not field.is_valid
+        return errors
+
     def has_error(self, field_name):
         return self.get_error(field_name) is not ''
 

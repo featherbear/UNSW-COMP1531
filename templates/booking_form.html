@@ -37,10 +37,44 @@ Here are some Jinja templates you might find useful:
 
 {% endraw %}
 -->
+<style>
+input {
+display: inline-block;
+}
 
+._error {
+color: red;
+}
+
+.total {
+font-size: 24px;
+}
+</style>
 <div>
-<!-- 
-  Complete this section
--->
+
+<form method="POST">
+<div><label>Customer Name</label><input type="text" name="customer_name" {% if form["customer_name"] %}value={{form["customer_name"]}}{% endif %} _required />{% if errors and errors["customer_name"] %}<span class="_error">Invalid customer name</span>{% endif %}</div>
+<div><label>License Number</label><input type="text" name="customer_licence" {% if form["customer_licence"] %}value={{form["customer_licence"]}}{% endif %} _required />{% if errors and errors["customer_licence"] %}<span class="_error">Invalid customer license</span>{% endif %}</div>
+<div><label>Start Date</label><input type="date" name="start_date" {% if form["start_date"] %}value={{form["start_date"]}}{% endif %} _required />{% if errors and errors["start_date"] %}<span class="_error">Invalid start date</span>{% endif %}</div>
+<div><label>End Date</label><input type="date" name="end_date" {% if form["end_date"] %}value={{form["end_date"]}}{% endif %} _required />{% if errors and errors["end_date"] %}<span class="_error">Invalid end date</span>{% endif %}</div>
+<div><label>Start Location</label><input type="text" name="start_location" {% if form["start_location"] %}value={{form["start_location"]}}{% endif %} _required />{% if errors and errors["start_location"] %}<span class="_error">Invalid start location</span>{% endif %}</div>
+<div><label>End Location</label><input type="text" name="end_location" {% if form["end_location"] %}value={{form["end_location"]}}{% endif %} _required />{% if errors and errors["end_location"] %}<span class="_error">Invalid end location</span>{% endif %}</div>
+{% if errors and errors["period"] %}<span class="_error">End date is before start date!</span>{% endif %}</div>
+
+{% if "fee" in data %}
+<div class="total">Booking will cost: ${{ data["fee"] }}</div>
+{% endif %}
+
+{% if data is not defined %}
+<button type="submit" name="check"/>Check booking</button>
+{% endif %}
+
+{% if "fee" in data %}
+<button type="submit" name="make" onclick="">Make booking</button>
+or <a href="/">Cancel</a>
+{% endif %}
+</form>
+
+
 </div>
 {% endblock %}

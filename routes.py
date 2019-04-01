@@ -63,27 +63,33 @@ def book(rego):
 
     if not car:
         abort(404)
-    
+
     if request.method == 'POST':
-        form = BookingForm(request.form)
-
-        '''
-        IMPLEMENT THIS SECTION
-        '''
+        if "make" not in request.form and "check" not in request.form:
+          abort(404)
         
-        # 1. If form is not valid, then display appropriate error messages
+        form = BookingForm(request.form)
+        print(request.form)
 
+        # 1. If form is not valid, then display appropriate error messages
+        if not form.is_valid:
+          return render_template('booking_form.html', errors = form.errors, form = request.form)
 
         # 2. If the user has pressed the 'check' button, then display the fee
-
-
+        if "check" in request.form:
+          checkData = dict(fee = system.check_fee(car, form.start_date, form.end_date))
+          
+          return render_template('booking_form.html', car=car, data=checkData, errors=False, form = request.form)
+        
         # 3. Otherwise, if the user has pressed the 'confirm' button, then 
         #   make the booking and display the confirmation page
+        
+        customer = Customer(form.customer_name, form.customer_licence)
+        booking = system.make_booking(customer, car, form.start_date, form.end_date, form.start_location, form.end_location)
+        bookingData = dict(booking = booking)
+        return render_template('booking_confirm.html', car=car, data = bookingData)
 
-
-    return render_template('booking_form.html', car=car)
-
-
+    return render_template('booking_form.html', car=car, form={})
 
 '''
 Display list of all bookings for the car with given 'rego'

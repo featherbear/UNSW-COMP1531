@@ -1,8 +1,19 @@
-<!-- Complete this section 
+{% extends "base.html" %}
+
+<!-- {% raw %} Complete this section 
 
     Display a confirmation message and the booking details
 
     The page should contain a link to the home page 
     (try using {% extends %} and {% block %} tags)
-
+    {% endraw %}
 -->
+
+{% block body %}
+<h1>Booking created!</h1>
+Customer: {{data["booking"]._customer}}
+<br>Car: {{data["booking"]._car}}
+<br>Period: {{ data["booking"]._period }} days
+<br>{{ data["booking"].location }}
+<br>Fee: ${{ data["booking"].fee }}
+{% endblock %}
