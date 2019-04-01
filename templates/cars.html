@@ -8,13 +8,27 @@
 	<button type='submit'>Search</button>
 </form>
 
-<ul>
+<ul class="carList">
 {% if cars %}
 	{% for car in cars %}
-		<li><a href="{{url_for('car', rego=car.rego)}}">{{car.name}} {{car.model}}</a></li>
+		<li><a href="{{url_for('car', rego=car.rego)}}">{{car.name}} {{car.model}} ({{car.__class__.mro()[0].__name__}})</a></li>
 	{% endfor %}
 {% else %}
 	No cars
 {% endif %}
 </ul>
+
+
+<style>
+.carList li {
+  list-style: none;
+}
+.carList a {
+  text-decoration: none;
+}
+.carList li:hover {
+  background-color: rgba(0,0,0, 0.2);
+}
+</style>
+
 {% endblock %}

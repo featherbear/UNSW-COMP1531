@@ -1,6 +1,22 @@
 {% extends 'base.html' %}
 {% block body %}
-<img src="https://easydrawingguides-7512.kxcdn.com/wp-content/uploads/2017/01/How-to-Draw-a-cartoon-car-20.png" width="100px" height="100px"/>
+<img class="carImg" src="https://easydrawingguides-7512.kxcdn.com/wp-content/uploads/2017/01/How-to-Draw-a-cartoon-car-20.png" width="100px" height="100px"/>
+<style>
+.carImg {
+animation: FLY 1s;
+}
+
+@keyframes FLY {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+</style>
+
 <br/>
 
 <h3>{{ car }}</h3>
