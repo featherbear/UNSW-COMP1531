@@ -1,0 +1,2 @@
+class __SIDE():
+  pass

@@ -3,6 +3,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/extreme-programming/</loc>
+    <lastmod>2019-03-30T21:31:09+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/rational-unified-process/</loc>
+    <lastmod>2019-03-26T16:00:00+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/midsem/</loc>
     <lastmod>2019-03-22T14:00:00+11:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -165,7 +179,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-03-22T14:00:00+11:00</lastmod>
+    <lastmod>2019-03-30T21:31:09+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -186,7 +200,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-03-22T14:00:00+11:00</lastmod>
+    <lastmod>2019-03-30T21:31:09+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -45,5 +45,10 @@ Incremental + customer feedback
 - Agile
 
 
+# Why Agile?
+Whilst agile development is more error-prone, it is rapidly becoming a more suitable development approach due to the improved productivity, quality, costs and satisfaction of the project.
 
-// Agile can be more error prone to the waterfall model, which is risk free
+* Individuals and interactions over processes and tools
+* Working software over comprehensive documentation
+* Customer collaboration over fixed terms and contracts
+* Adaptation to change

@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Fri, 22 Mar 2019 14:00:00 +1100</lastBuildDate>
+    <lastBuildDate>Sat, 30 Mar 2019 21:31:09 +1100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Extreme Programming</title>
+      <link>/post/extreme-programming/</link>
+      <pubDate>Sat, 30 Mar 2019 21:31:09 +1100</pubDate>
+      
+      <guid>/post/extreme-programming/</guid>
+      <description>Principles  Pair Programming - One person codes whilst the other person reviews Continuous Integration Refactoring - Optimise code structures Test-Driven Development</description>
+    </item>
+    
+    <item>
+      <title>Rational Unified Process</title>
+      <link>/post/rational-unified-process/</link>
+      <pubDate>Tue, 26 Mar 2019 16:00:00 +1100</pubDate>
+      
+      <guid>/post/rational-unified-process/</guid>
+      <description>The Rational Unified Process is a [software developement approach]() similar to the agile approach.</description>
+    </item>
     
     <item>
       <title>Mid-Semester  Exam</title>
