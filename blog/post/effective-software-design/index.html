@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Extreme Programming - COMP1531 Musings</title>
+  <title>Effective Software Design - COMP1531 Musings</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="z5206677" /><meta name="description" content="Principles  Pair Programming - One person codes whilst the other person reviews Continuous Integration Refactoring - Optimise code structures Test-Driven Development" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="z5206677" /><meta name="description" content="Design Smells Design smells are a symptom of poor design, often caused by violation of key design principles." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
 
 
-<link rel="canonical" href="../../post/extreme-programming/" />
+<link rel="canonical" href="../../post/effective-software-design/" />
 <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
@@ -39,27 +39,27 @@
 <link rel="stylesheet" href="../../css/typedjs.shortcode.css">
 
 
-<meta property="og:title" content="Extreme Programming" />
-<meta property="og:description" content="Principles  Pair Programming - One person codes whilst the other person reviews Continuous Integration Refactoring - Optimise code structures Test-Driven Development" />
+<meta property="og:title" content="Effective Software Design" />
+<meta property="og:description" content="Design Smells Design smells are a symptom of poor design, often caused by violation of key design principles." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/extreme-programming/" />
-<meta property="article:published_time" content="2019-03-30T21:31:09&#43;11:00"/>
-<meta property="article:modified_time" content="2019-03-30T21:31:09&#43;11:00"/>
+<meta property="og:url" content="/post/effective-software-design/" />
+<meta property="article:published_time" content="2019-04-02T16:17:42&#43;11:00"/>
+<meta property="article:modified_time" content="2019-04-02T16:17:42&#43;11:00"/>
 
-<meta itemprop="name" content="Extreme Programming">
-<meta itemprop="description" content="Principles  Pair Programming - One person codes whilst the other person reviews Continuous Integration Refactoring - Optimise code structures Test-Driven Development">
+<meta itemprop="name" content="Effective Software Design">
+<meta itemprop="description" content="Design Smells Design smells are a symptom of poor design, often caused by violation of key design principles.">
 
 
-<meta itemprop="datePublished" content="2019-03-30T21:31:09&#43;11:00" />
-<meta itemprop="dateModified" content="2019-03-30T21:31:09&#43;11:00" />
-<meta itemprop="wordCount" content="91">
+<meta itemprop="datePublished" content="2019-04-02T16:17:42&#43;11:00" />
+<meta itemprop="dateModified" content="2019-04-02T16:17:42&#43;11:00" />
+<meta itemprop="wordCount" content="178">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Extreme Programming"/>
-<meta name="twitter:description" content="Principles  Pair Programming - One person codes whilst the other person reviews Continuous Integration Refactoring - Optimise code structures Test-Driven Development"/>
+<meta name="twitter:title" content="Effective Software Design"/>
+<meta name="twitter:description" content="Design Smells Design smells are a symptom of poor design, often caused by violation of key design principles."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -118,10 +118,10 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Extreme Programming</h1>
+      <h1 class="post-title">Effective Software Design</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-03-30 </span>
+        <span class="post-time"> 2019-04-02 </span>
         
         
       </div>
@@ -132,8 +132,19 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#principles">Principles</a></li>
-<li><a href="#project-velocity">Project Velocity</a></li>
+<li><a href="#design-smells">Design Smells</a></li>
+<li><a href="#good-design">Good Design</a></li>
+<li><a href="#solid">SOLID</a>
+<ul>
+<li><a href="#single-reponsibility-principle">Single Reponsibility Principle</a></li>
+<li><a href="#open-closed-principle">Open-Closed Principle</a></li>
+</ul></li>
+<li><a href="#model-view-controller-mvc">Model-View-Controller (MVC)</a>
+<ul>
+<li><a href="#model">Model</a></li>
+<li><a href="#view-observer">View (Observer)</a></li>
+<li><a href="#controller">Controller</a></li>
+</ul></li>
 </ul>
 </nav>
   </div>
@@ -141,46 +152,83 @@
     <div class="post-content">
       
 
-<h1 id="principles">Principles</h1>
+<h1 id="design-smells">Design Smells</h1>
+
+<p>Design smells are a symptom of poor design, often caused by violation of key design principles.</p>
 
 <ul>
-<li>Pair Programming - One person codes whilst the other person reviews</li>
-<li>Continuous Integration</li>
-<li>Refactoring - Optimise code structures</li>
+<li><p>Rigidity - software is too difficult to change even in simle ways</p></li>
 
-<li><p>Test-Driven Development</p></li>
+<li><p>Fragility - Tendency of the software to break in many places when a single change is made</p></li>
 
-<li><p>Daily standup meetings
-<img src="Snipaste_2019-03-30_21-44-46.png" alt="" /></p></li>
+<li><p>Immobility - hard to reuse</p></li>
+
+<li><p>Viscosity - Changes are easier to implement through &lsquo;hacks&rsquo;</p></li>
+
+<li><p>Opacity - Difficult to understand</p></li>
+
+<li><p>Needless Complexity</p></li>
+
+<li><p>Needless Repetition</p></li>
 </ul>
 
-<h1 id="project-velocity">Project Velocity</h1>
+<h1 id="good-design">Good Design</h1>
 
-<p>The project velocity is the average rate of story points that are completed in each iteration</p>
+<ul>
+<li><p>Coupling - Interdependence between components or classes</p></li>
 
-<p>Time - Number of user stories that can be implemented before a given date.
-Number of iterations by velocity</p>
+<li><p>Cohesion - How well the components work together</p></li>
+</ul>
 
-<p>Project duration - Total Work Size / Project Velocity</p>
+<h1 id="solid">SOLID</h1>
 
-<p>Scope - How long a set of stories will take to finish.
-Total Weeks of Estimated User Stores / Project Velocity</p>
+<h2 id="single-reponsibility-principle">Single Reponsibility Principle</h2>
+
+<p>Class should have ONE reason to change</p>
+
+<ul>
+<li>Readability</li>
+<li>Reusability</li>
+<li>Testability</li>
+</ul>
+
+<h2 id="open-closed-principle">Open-Closed Principle</h2>
+
+<p><strong>Open</strong> - Program is open to modifications<br />
+<strong>Closed</strong> - Extension of the behaviour should need to modify the internals</p>
+
+<p>Applying OCP reduces rigidity, and is achievable by abstracting functionality</p>
+
+<p>Dynamic Binding - At runtime Python is able to determine what type a variable is.</p>
+
+<!-- **Polymorphism** - Different methods depending on type -->
+
+<h1 id="model-view-controller-mvc">Model-View-Controller (MVC)</h1>
+
+<h2 id="model">Model</h2>
+
+<p>Holds the data, state, and methods of a data structure
+Responds to changes from the controller</p>
+
+<h2 id="view-observer">View (Observer)</h2>
+
+<p>Presentation layer (Representation of the model)</p>
+
+<h2 id="controller">Controller</h2>
+
+<p>&hellip; the controller&hellip;?</p>
 
     </div>
 
     <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="../../post/rational-unified-process/">
+        <a class="prev" href="../../post/extreme-programming/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Rational Unified Process</span>
+            <span class="prev-text nav-default">Extreme Programming</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="../../post/effective-software-design/">
-            <span class="next-text nav-default">Effective Software Design</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
+        
       </nav>
     </footer>
   </article>

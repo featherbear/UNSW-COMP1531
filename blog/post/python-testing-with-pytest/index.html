@@ -52,7 +52,7 @@
 
 <meta itemprop="datePublished" content="2019-03-18T13:23:51&#43;11:00" />
 <meta itemprop="dateModified" content="2019-03-18T13:23:51&#43;11:00" />
-<meta itemprop="wordCount" content="90">
+<meta itemprop="wordCount" content="269">
 
 
 
@@ -135,6 +135,7 @@
     <nav id="TableOfContents">
 <ul>
 <li><a href="#testing-for-exceptions">Testing for Exceptions</a></li>
+<li><a href="#fixtures">Fixtures</a></li>
 <li><a href="#setup-and-teardown">Setup and Teardown</a></li>
 </ul>
 </nav>
@@ -191,7 +192,97 @@
   <span class="n">doSomethingThatRaisesAnException</span></code></pre></td></tr></table>
 </div>
 </div>
+<h1 id="fixtures">Fixtures</h1>
+
+<p>If you have code which produces an object that runs for several tests, you can group them into a fixture</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span>
+<span class="k">def</span> <span class="nf">mySystem</span><span class="p">():</span>
+  <span class="c1"># do stuff</span>
+  <span class="n">sys</span> <span class="o">=</span> <span class="n">SomeSystemThing</span><span class="p">()</span>
+  <span class="n">sys</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">sys</span>
+
+<span class="k">def</span> <span class="nf">test_checking</span><span class="p">(</span><span class="n">mySystem</span><span class="p">):</span>
+  <span class="c1"># Fixture name here ^^^^</span>
+  <span class="k">assert</span> <span class="n">mySystem</span><span class="o">.</span><span class="n">check</span><span class="p">()</span> <span class="o">==</span> <span class="kc">True</span></code></pre></td></tr></table>
+</div>
+</div>
 <h1 id="setup-and-teardown">Setup and Teardown</h1>
+
+<p>Another way to rerun the same piece of code multiple times is through a setup and teardown procedure.</p>
+
+<p>Consider this excerpt from <a href="https://stackoverflow.com/a/40558283">StackOverflow</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="n">lh</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">got</span> <span class="n">log</span> <span class="n">handler</span> <span class="kn">from</span> <span class="nn">logger</span> <span class="n">module</span><span class="o">&gt;</span>
+
+<span class="k">class</span> <span class="nc">TestClass</span><span class="p">:</span>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">setup_class</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="n">lh</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;starting class: </span><span class="si">{}</span><span class="s2"> execution&#34;</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="p">))</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">teardown_class</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="n">lh</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;starting class: </span><span class="si">{}</span><span class="s2"> execution&#34;</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">setup_method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">):</span>
+        <span class="n">lh</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;starting execution of tc: </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">method</span><span class="o">.</span><span class="vm">__name__</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">teardown_method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">):</span>
+        <span class="n">lh</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;starting execution of tc: </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">method</span><span class="o">.</span><span class="vm">__name__</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">test_tc1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="o">&lt;</span><span class="n">tc_content</span><span class="o">&gt;</span>
+        <span class="k">assert</span> 
+
+    <span class="k">def</span> <span class="nf">test_tc2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="o">&lt;</span><span class="n">tc_content</span><span class="o">&gt;</span>
+        <span class="k">assert</span></code></pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>Now when I run my tests, when the TestClass execution is starting, it logs the details for when it is beginning execution, when it is ending execution and same for the methods..</p>
+</blockquote>
 
     </div>
 
