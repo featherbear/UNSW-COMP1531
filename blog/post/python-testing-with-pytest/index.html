@@ -52,7 +52,7 @@
 
 <meta itemprop="datePublished" content="2019-03-18T13:23:51&#43;11:00" />
 <meta itemprop="dateModified" content="2019-03-18T13:23:51&#43;11:00" />
-<meta itemprop="wordCount" content="269">
+<meta itemprop="wordCount" content="293">
 
 
 
@@ -159,11 +159,21 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="c1"># Imports here</span>
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="c1"># Import pytest</span>
 <span class="kn">import</span> <span class="nn">pytest</span>
 
+<span class="c1"># We define tests as functions</span>
+<span class="k">def</span> <span class="nf">test_something</span><span class="p">():</span>
+  <span class="k">pass</span>
+
+<span class="c1"># We can also group our test methods into classes</span>
 <span class="k">class</span> <span class="nc">TestUS1</span><span class="p">():</span>
   <span class="k">def</span> <span class="nf">test_normal_use</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">pass</span>

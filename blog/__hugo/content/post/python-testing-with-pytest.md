@@ -21,9 +21,14 @@ sequenceDiagrams:
 
 
 ```python3
-# Imports here
+# Import pytest
 import pytest
 
+# We define tests as functions
+def test_something():
+  pass
+
+# We can also group our test methods into classes
 class TestUS1():
   def test_normal_use(self):
     pass
