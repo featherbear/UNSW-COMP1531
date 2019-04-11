@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Car Rental System!</title>
+</head>
+
+<body>
+<header>
+
+<h1>AffordableRentals!</h1>
+<h3>Ripping people off since 2019</h3>
+
+<div class='menu'>
+<ul>
+<li><b>MENU</b></li>
+<li><a href="{{ url_for('cars') }}">Home</a></li>
+</ul>
+<style>
+.menu {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.menu ul {
+  padding:0;
+  list-style:none;
+}
+.menu li {
+  display:inline-block;
+}
+</style>
+</div>
+<br>
+
+<!-- Main Content -->
+{% block body %}{% endblock %}
+
+</body>
+</html>
