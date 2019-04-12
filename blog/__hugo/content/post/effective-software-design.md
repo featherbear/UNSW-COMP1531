@@ -35,9 +35,11 @@ Design smells are a symptom of poor design, often caused by violation of key des
 
 # Good Design
 
-* Coupling - Interdependence between components or classes
+* Coupling - Interdependence between components or classes  
+-> We want low coupling
 
-* Cohesion - How well the components work together
+* Cohesion - How well the components work together  
+-> We want high cohesion
 
 # SOLID
 ## Single Reponsibility Principle

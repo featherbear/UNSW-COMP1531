@@ -3,6 +3,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/submitting-data-to-flask/</loc>
+    <lastmod>2019-04-10T18:05:21+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/session-storage/</loc>
+    <lastmod>2019-04-09T16:22:17+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/effective-software-design/</loc>
     <lastmod>2019-04-02T16:17:42+11:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -53,6 +67,13 @@
   
   <url>
     <loc>/post/quiz01/</loc>
+    <lastmod>2019-03-10T14:51:41+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/quiz02/</loc>
     <lastmod>2019-03-10T14:51:41+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -186,7 +207,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-04-02T16:17:42+11:00</lastmod>
+    <lastmod>2019-04-10T18:05:21+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -207,7 +228,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-04-02T16:17:42+11:00</lastmod>
+    <lastmod>2019-04-10T18:05:21+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

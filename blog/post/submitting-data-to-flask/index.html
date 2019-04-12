@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Submitting data to Flask with HTML Forms - COMP1531 Musings</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="z5206677" /><meta name="description" content="Disclaimer: This page is entirely static and does not interact with any server, all client-server interactions are purely simulated" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="../../post/submitting-data-to-flask/" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+<link rel="manifest" href="../../manifest.json">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="../../dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="../../css/typedjs.shortcode.css">
+
+
+<meta property="og:title" content="Submitting data to Flask with HTML Forms" />
+<meta property="og:description" content="Disclaimer: This page is entirely static and does not interact with any server, all client-server interactions are purely simulated" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/submitting-data-to-flask/" />
+<meta property="article:published_time" content="2019-04-10T18:05:21&#43;10:00"/>
+<meta property="article:modified_time" content="2019-04-10T18:05:21&#43;10:00"/>
+
+<meta itemprop="name" content="Submitting data to Flask with HTML Forms">
+<meta itemprop="description" content="Disclaimer: This page is entirely static and does not interact with any server, all client-server interactions are purely simulated">
+
+
+<meta itemprop="datePublished" content="2019-04-10T18:05:21&#43;10:00" />
+<meta itemprop="dateModified" content="2019-04-10T18:05:21&#43;10:00" />
+<meta itemprop="wordCount" content="964">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Submitting data to Flask with HTML Forms"/>
+<meta name="twitter:description" content="Disclaimer: This page is entirely static and does not interact with any server, all client-server interactions are purely simulated"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="../../" class="logo">COMP1531 Musings</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="../../">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="https://github.com/featherbear/UNSW-COMP1531">
+        <li class="mobile-menu-item">GitHub</li>
+      </a><a href="../../categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="../../" class="logo">COMP1531 Musings</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="../../">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="https://github.com/featherbear/UNSW-COMP1531">GitHub</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="../../categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Submitting data to Flask with HTML Forms</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-04-10 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#html-forms">HTML Forms</a>
+<ul>
+<li><a href="#forms-using-get">Forms using GET</a></li>
+<li><a href="#forms-using-post">Forms using POST</a></li>
+</ul></li>
+<li><a href="#forms-and-flask">Forms and Flask</a>
+<ul>
+<li><a href="#handling-get">Handling GET</a></li>
+<li><a href="#handling-post">Handling POST</a></li>
+</ul></li>
+<li><a href="#use-cases">Use Cases</a>
+<ul>
+<li><a href="#keeping-submitted-data">Keeping submitted data</a></li>
+<li><a href="#client-side-validation">Client-side validation</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      
+
+<p><em><strong>Disclaimer</strong>: This page is entirely static and does not interact with any server, all client-server interactions are purely simulated</em></p>
+
+<hr />
+
+<script type="text/javascript">
+location.query = {};
+(function() {
+  let queryIndex = location.href.indexOf("?");
+  if (queryIndex > -1) {
+    for (let keyPair of location.href.replace(location.hash,"").substr(queryIndex+1).split("&")) {
+      keyPair = keyPair.split("=");
+      location.query[keyPair[0]] = keyPair[1];
+    }
+  }
+})();
+
+function applyQuery() {
+  if (location.query.name && location.query.age) {
+    for (let elem of document.getElementsByClassName("name")) elem.innerText = location.query.name;
+    for (let elem of document.getElementsByClassName("age")) elem.innerText = location.query.age;
+  }
+};
+
+let checkPoint = 0;
+function applyCheckpoint() {
+  if (checkPoint) document.getElementById("anchor" + checkPoint).scrollIntoView();
+}
+</script>
+
+<style>
+form {
+  background-color: rgba(127,127,127,0.05);
+  padding: 20px 0;
+}
+form:hover {
+    background-color: rgba(127,127,127,0.1);
+}
+
+input, button {
+  display: block;
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+}
+input::placeholder {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+button {
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 93%;
+  background-color: rgba(127,127,127,0.2)
+}
+button:hover {
+    color: #ff5722;
+}
+input:hover, input:focus, input:active:focus {
+  color: #ff5722;
+  outline: none;
+  border-bottom: 1px solid #ff5722;
+}
+input:hover::placeholder, input:focus::placeholder, input:active:focus::placeholder {
+  color: #ff5722;
+  position: relative;
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+input[name=name],
+input[name=age] {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #858585;
+  font-weight: lighter;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+</style>
+
+<h1 id="html-forms">HTML Forms</h1>
+
+<form id="form1">
+  <input type="text" name="name" placeholder="What's your name?" required>
+  <br/>
+  <input type="number" name="age" placeholder="How old are you?" required>
+  <br/>
+  <button type="submit">Submit</button>
+</form>
+
+<p>The source code of this HTML form looks like:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;name&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;What&#39;s your name?&#34;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;number&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;age&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;How old are you?&#34;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<script type="text/javascript">
+function submitForm(formID, forceBool) {
+  var elem = document.getElementById(formID);
+  if (forceBool || elem.reportValidity()) elem.submit();
+}
+</script>
+
+<div class="admonition note"><p class="admonition-title">Try It!</p>
+  <p>Write your name and age into the above form.<br />
+When you press the <a href="javascript:submitForm('form1')"><strong>Submit</strong></a> button, have a look at the URL!</p>
+
+</div>
+
+<style>
+.name, .age {
+  font-weight: bold;
+}
+</style>
+
+<div id="checkPoint1" style="display:none">
+</br></br><hr><div id="anchor1"></div></br></br></br>
+Hey there, <span class="name"></span>!</br>
+You're apparently <span class="age"></span> years old!!!
+</br></br></br><hr></br></br></br>
+</div>
+
+<script type="text/javascript">
+if (location.query.name && location.query.age) {
+  document.getElementById("checkPoint1").style.display="initial";
+  checkPoint = 1;
+}
+</script>
+
+<p><br><br></p>
+
+<h2 id="forms-using-get">Forms using GET</h2>
+
+<p>Have a look at the address bar - We can see the data that we just submitted.<br />
+This type of form submission uses a <code>GET</code> request</p>
+
+<p>Great, <strong><em>or is it&hellip;</em></strong></p>
+
+<div class="admonition note"><p class="admonition-title">Try It!</p>
+  <p>Modify the <code>?name=<span class="name"></span>&amp;age=<span class="age"></span></code> portion of the URL and change the name!</p>
+
+</div>
+
+<p>Submitting form data via a GET request is somewhat insecure, as it allows the client to easily tamper with the data. <em>(It also makes the URL look yucky!)</em></p>
+
+<p>&nbsp;</p>
+
+<p>Instead, what we can do is change our form to use the <code>POST</code> request method!!!</p>
+
+<p><br><br></p>
+
+<h2 id="forms-using-post">Forms using POST</h2>
+
+<form method="POST" id="form2">
+  <input type="text" name="name" placeholder="What's your name?" required>
+  <br/>
+  <input type="number" name="age" placeholder="How old are you?" required>
+  <br/>
+  <button type="submit">Submit via POST</button>
+</form>
+
+<script type="text/javascript">
+  document.getElementById('form2').addEventListener('submit', function(evt) {
+    if (evt) evt.preventDefault();
+    history.replaceState(null,null,".");
+    if (this.reportValidity()) {
+      location.query.name = this.name.value;
+      location.query.age = this.age.value;
+      this.name.value = "";
+      this.age.value = "";
+      document.getElementById("checkPoint2").style.display="initial";
+      applyQuery();
+      checkPoint = 2;
+      applyCheckpoint();
+    }
+  })
+</script>
+
+<p>The HTML code follows the standard form convention, but with a <code>method=&quot;POST&quot;</code> attribute in the <code>&lt;form&gt;</code> tag:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;POST&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;name&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;What&#39;s your name?&#34;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;number&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;age&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;How old are you?&#34;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>Submit via POST<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="admonition note"><p class="admonition-title">Try It!</p>
+  <p>Write your name and age into the above form.<br />
+Then press the <a href="javascript:submitForm('form2')"><strong>Submit</strong></a> button!</p>
+
+</div>
+
+<div id="checkPoint2" style="display:none">
+</br></br></hr></br><hr></br></br></br>
+<div id="anchor2"></div>
+Hey there, <span class="name"></span>!</br>
+You're apparently <span class="age"></span> years old!!!
+</br></br></br></br><hr></br></br></br>
+</div>
+
+<p>This time, there&rsquo;s no data in the URL - rather the data was sent to the server via a <code>POST</code> request!</p>
+
+<script type="text/javascript">
+applyQuery();
+applyCheckpoint();
+</script>
+
+<p><br><br></p>
+
+<h1 id="forms-and-flask">Forms and Flask</h1>
+
+<h2 id="handling-get">Handling GET</h2>
+
+<p>To retrieve the query arguments in Flask</p>
+
+<p>1) Import the request proxy<br />
+<code>from flask import request</code></p>
+
+<p>2) Access the data<br />
+<code>request.args</code></p>
+
+<p><strong><em>Example</em></strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&#34;/hello/&#34;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;GET&#34;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">greetingGET</span><span class="p">():</span>
+  <span class="c1"># validate(request.args) # Check that the arguments are valid</span>
+  <span class="k">return</span> <span class="n">f</span><span class="s2">&#34;&#34;&#34;Hey there, </span><span class="si">{request.args[&#39;name&#39;]}</span><span class="s2">!&lt;br&gt;
+</span><span class="s2">             You are supposedly </span><span class="si">{request.args[&#39;age&#39;]}</span><span class="s2"> years old!&#34;&#34;&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="handling-post">Handling POST</h2>
+
+<p>To retrieve the post data in Flask</p>
+
+<p>1) Import the request proxy<br />
+<code>from flask import request</code></p>
+
+<p>2) Access the data<br />
+<code>request.data</code><br />
+<em>(Make sure your route decorator has <code>POST</code> in its method scope!)</em></p>
+
+<p><strong><em>Example</em></strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&#34;/hello/&#34;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;POST&#34;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">greetingPOST</span><span class="p">():</span>
+  <span class="c1"># validate(request.data) # Check that the data is valid</span>
+  <span class="k">return</span> <span class="n">f</span><span class="s2">&#34;&#34;&#34;Hey there, </span><span class="si">{request.data[&#39;name&#39;]}</span><span class="s2">!&lt;br&gt;
+</span><span class="s2">             You are supposedly </span><span class="si">{request.data[&#39;age&#39;]}</span><span class="s2"> years old!&#34;&#34;&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><br><br></p>
+
+<h1 id="use-cases">Use Cases</h1>
+
+<h2 id="keeping-submitted-data">Keeping submitted data</h2>
+
+<p>If you noticed in the above forms&hellip;<br />
+When you pressed the <a href="javascript:">Submit</a> button, after the page loaded with the response - <strong>your form was empty</strong>!</p>
+
+<p>This is because HTTP is a stateless protocol, each request doesn&rsquo;t know about any other request.<br />
+As a result, the response webpage will not be able to know the submitted data&hellip; <strong><em>unless</em></strong> we make it so</p>
+
+<p>This can easily be done with Flask&rsquo;s <code>render_template</code> function, where we can pass the submitted form data back into the webpage!</p>
+
+<p>Refer to this <a href="https://github.com/featherbear/UNSW-COMP1531/blob/6843ca5d5123b0cdf917110aeedb2ac972b465c4/Labs/lab07_08_featherbear/templates/booking_form.html#L56">file from the week 7 / 8 lab</a>&hellip;</p>
+
+<p><u><strong>Example</strong></u></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python3" data-lang="python3"><span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">request</span><span class="p">,</span> <span class="n">render_template</span> <span class="c1"># ...</span>
+<span class="c1">###</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&#34;/hello&#34;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;GET&#34;</span><span class="p">,</span> <span class="s2">&#34;POST&#34;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">helloMULTI</span><span class="p">():</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s2">&#34;GET&#34;</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">args</span>
+  <span class="k">else</span><span class="p">:</span> <span class="c1"># request.method == &#34;POST&#34;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">data</span>
+
+  <span class="n">name</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;name]</span><span class="err">
+</span><span class="err"></span><span class="s2">  age = int(data[&#34;</span><span class="n">age</span><span class="s2">&#34;])</span><span class="err">
+</span><span class="err"></span><span class="s2">  ageIsEven = age % 2 == 0</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="s2">  return render_template(&#34;</span><span class="n">hello</span><span class="o">.</span><span class="n">html</span><span class="s2">&#34;, name = name, age = age, isEven = ageIsEven, formData = data)</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;name&#34;</span> <span class="err">{%</span> <span class="na">if</span> <span class="na">formData</span><span class="err">[&#34;</span><span class="na">name</span><span class="err">&#34;]</span> <span class="err">%}</span><span class="na">value</span><span class="o">=</span><span class="s">{{formData[&#34;name&#34;]}}{%</span> <span class="na">endif</span> <span class="err">%}</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">age</span><span class="o">=</span><span class="s">&#34;age&#34;</span> <span class="err">{%</span> <span class="na">if</span> <span class="na">formData</span><span class="err">[&#34;</span><span class="na">age</span><span class="err">&#34;]</span> <span class="err">%}</span><span class="na">value</span><span class="o">=</span><span class="s">{{formData[&#34;age&#34;]}}{%</span> <span class="na">endif</span> <span class="err">%}</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+Hey there, {{name}}!!
+You are {{age}} years old, which is an {{&#34;even&#34; if isEven else &#34;odd&#34;}} age!</code></pre></td></tr></table>
+</div>
+</div>
+<p><br>
+<u><strong>Demo</strong></u>
+<form id="form3" method="POST">
+ <input type="text" name="name" placeholder="What's your name?" required>
+ <input type="number" name="age" placeholder="What's your age?" required>
+ <button type="submit">Submit</button>
+</form></p>
+
+<div id="form3_output" style="display:none">
+  <br><u><b>Output</b></u><br>
+  <div class="content">
+    Hey there, <span class="name"></span>!!<br>
+    You are <span class="age"></span> years old, which is an <span name="isEven"></span> age!
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.getElementById('form3').addEventListener('submit', function(evt) {
+    if (evt) evt.preventDefault();
+    history.replaceState(null,null,".");
+    if (this.reportValidity()) {
+      location.query.name = this.name.value;
+      location.query.age = this.age.value;
+      document.querySelector("[name=isEven]").innerText = Number(location.query.age) % 2 == 0 ? "even" : "odd";
+      document.getElementById("form3_output").style.display="initial";
+      applyQuery();
+    }
+  });
+</script>
+
+<p><br><br></p>
+
+<h2 id="client-side-validation">Client-side validation</h2>
+
+<p>It is good practice to also validate form data on the client-side <strong>as well as on the server-side</strong>!</p>
+
+<p><em>(Note: Server-side validation is a <strong>MUST</strong>, regardless if you have client-side validation or not)</em></p>
+
+<p>To do such, you can add the <code>required</code> attribute to your <code>&lt;input&gt;</code> tags.<br />
+For example: <code>&lt;input type=&quot;number&quot; name=&quot;age&quot; required&gt;</code></p>
+
+<p>This prevents the browser from submitting the form unless the input is filled, <em>and</em> has valid content corresponding to the input <code>type</code></p>
+
+<p>(In fact, all the forms on this page already have this attribute added!)</p>
+
+    </div>
+
+    <footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="../../post/session-storage/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Storing website data</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:z5206677@student.unsw.edu.au" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.linkedin.com/in/andrewjinmengwong/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/featherbear" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.instagram.com/_andrewjwong/" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="../../index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Andrew Wong (z5206677)</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+<script src="../../js/typed.js@2.0.9"></script>
+<script src="../../js/typedjs.shortcode.js"></script>
+
+
+</body>
+</html>

@@ -37,5 +37,5 @@ Number of iterations by velocity
 
 Project duration - Total Work Size / Project Velocity
 
-Scope - How long a set of stories will take to finish.
-Total Weeks of Estimated User Stores / Project Velocity
+Scope - How long a set of stories will take to finish.  
+_(Total Weeks of Estimated User Stores / Project Velocity)_

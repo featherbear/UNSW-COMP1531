@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Tue, 02 Apr 2019 16:17:42 +1100</lastBuildDate>
+    <lastBuildDate>Wed, 10 Apr 2019 18:05:21 +1000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Submitting data to Flask with HTML Forms</title>
+      <link>/post/submitting-data-to-flask/</link>
+      <pubDate>Wed, 10 Apr 2019 18:05:21 +1000</pubDate>
+      
+      <guid>/post/submitting-data-to-flask/</guid>
+      <description>Disclaimer: This page is entirely static and does not interact with any server, all client-server interactions are purely simulated</description>
+    </item>
+    
+    <item>
+      <title>Storing website data</title>
+      <link>/post/session-storage/</link>
+      <pubDate>Tue, 09 Apr 2019 16:22:17 +1000</pubDate>
+      
+      <guid>/post/session-storage/</guid>
+      <description>The HTTP protocol is stateless, meaning that requests are independent from each other, and hence there is no sort of data persistance.</description>
+    </item>
     
     <item>
       <title>Effective Software Design</title>
@@ -81,6 +99,15 @@
       <pubDate>Sun, 10 Mar 2019 14:51:41 +1100</pubDate>
       
       <guid>/post/quiz01/</guid>
+      <description>Disclaimer: These are my answers, not official answers.</description>
+    </item>
+    
+    <item>
+      <title>Quiz 02</title>
+      <link>/post/quiz02/</link>
+      <pubDate>Sun, 10 Mar 2019 14:51:41 +1100</pubDate>
+      
+      <guid>/post/quiz02/</guid>
       <description>Disclaimer: These are my answers, not official answers.</description>
     </item>
     
