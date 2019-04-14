@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Introduction to Python - COMP1531 Musings</title>
+  <title>Entity Relationship Modelling - COMP1531 Musings</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="z5206677" /><meta name="description" content="Python is a" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="z5206677" /><meta name="description" content="Aside: Big Data Big Data refers to (a lot of) data of different types that can be analysed to provide insights." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
 
 
-<link rel="canonical" href="../../post/intro-to-python/" />
+<link rel="canonical" href="../../post/entity-relationship-modelling/" />
 <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
@@ -39,27 +39,27 @@
 <link rel="stylesheet" href="../../css/typedjs.shortcode.css">
 
 
-<meta property="og:title" content="Introduction to Python" />
-<meta property="og:description" content="Python is a" />
+<meta property="og:title" content="Entity Relationship Modelling" />
+<meta property="og:description" content="Aside: Big Data Big Data refers to (a lot of) data of different types that can be analysed to provide insights." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/intro-to-python/" />
-<meta property="article:published_time" content="2019-02-20T14:54:44&#43;11:00"/>
-<meta property="article:modified_time" content="2019-02-20T14:54:44&#43;11:00"/>
+<meta property="og:url" content="/post/entity-relationship-modelling/" />
+<meta property="article:published_time" content="2019-04-13T15:14:07&#43;10:00"/>
+<meta property="article:modified_time" content="2019-04-13T15:14:07&#43;10:00"/>
 
-<meta itemprop="name" content="Introduction to Python">
-<meta itemprop="description" content="Python is a">
+<meta itemprop="name" content="Entity Relationship Modelling">
+<meta itemprop="description" content="Aside: Big Data Big Data refers to (a lot of) data of different types that can be analysed to provide insights.">
 
 
-<meta itemprop="datePublished" content="2019-02-20T14:54:44&#43;11:00" />
-<meta itemprop="dateModified" content="2019-02-20T14:54:44&#43;11:00" />
-<meta itemprop="wordCount" content="209">
+<meta itemprop="datePublished" content="2019-04-13T15:14:07&#43;10:00" />
+<meta itemprop="dateModified" content="2019-04-13T15:14:07&#43;10:00" />
+<meta itemprop="wordCount" content="310">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Introduction to Python"/>
-<meta name="twitter:description" content="Python is a"/>
+<meta name="twitter:title" content="Entity Relationship Modelling"/>
+<meta name="twitter:description" content="Aside: Big Data Big Data refers to (a lot of) data of different types that can be analysed to provide insights."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -118,14 +118,11 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Introduction to Python</h1>
+      <h1 class="post-title">Entity Relationship Modelling</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-02-20 </span>
-        <div class="post-category">
-            <a href="../../categories/info/"> Info </a>
-            <a href="../../categories/python/"> Python </a>
-            </div>
+        <span class="post-time"> 2019-04-13 </span>
+        
         
       </div>
     </header>
@@ -135,8 +132,16 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#string-indexing">String Indexing</a></li>
-<li><a href="#im-mutability">(Im)mutability</a></li>
+<li>
+<ul>
+<li><a href="#aside-big-data">Aside: Big Data</a></li>
+<li><a href="#aside-databases">Aside: Databases</a></li>
+</ul></li>
+<li><a href="#entity-relationship-modelling">Entity Relationship Modelling</a>
+<ul>
+<li><a href="#entity-sets">Entity Sets</a></li>
+<li><a href="#entity-instances">Entity Instances</a></li>
+</ul></li>
 </ul>
 </nav>
   </div>
@@ -144,91 +149,80 @@
     <div class="post-content">
       
 
-<p>Python is a</p>
+<h2 id="aside-big-data">Aside: Big Data</h2>
+
+<p>Big Data refers to (a lot of) data of different types that can be analysed to provide insights.</p>
+
+<p>The three V&rsquo;s of Big Data are:</p>
 
 <ul>
-<li><strong>dynamically typed</strong> language - variable types are assigned at runtime</li>
-<li><strong>Interpreted language</strong> - code is compiled and executed line by line</li>
-<li><strong>Strongly typed</strong> - No type coercion</li>
+<li><strong>V</strong>olume - The amount</li>
+<li><strong>V</strong>elocity - The rate</li>
+<li><strong>V</strong>ariety - The types</li>
 </ul>
 
-<p>&nbsp;</p>
+<p>Originally - to store data, the common SQL approach was adopted. However when requiring to store datatypes of different and complex types, other standards such as NoSQL (Not-Only SQL) came to arise</p>
 
-<p>Python gives us high level functions and operations to do things that might take 10-15 lines in C.</p>
+<h2 id="aside-databases">Aside: Databases</h2>
 
-<p><em>In the interpreter&hellip;</em><br />
-Unless defined, the <code>_</code> character keeps the result of the last value</p>
+<p><strong>DBMS</strong> - <strong>D</strong>ata<strong>b</strong>ase <strong>M</strong>anagement <strong>S</strong>ystem<br />
+<strong>DDL</strong> - <strong>D</strong>ata <strong>D</strong>efinition <strong>L</strong>anguage <em>[schemas]</em><br />
+<strong>DML</strong> - <strong>D</strong>ata <strong>M</strong>anipulation <strong>L</strong>anguage <em>[transactions]</em></p>
 
-<p><em>Fun fact: Python was written in C</em></p>
+<p>Types of Databases:<br />
+* OO Model - OODBMS
+* Relational Model - RDBMS - ie Oracle, MySQL, SQLite
+* DOM Model - ie JSON, XML - ie MongoDB</p>
 
-<hr />
+<h1 id="entity-relationship-modelling">Entity Relationship Modelling</h1>
 
-<h1 id="string-indexing">String Indexing</h1>
+<p>ER Modelling is another way to describe the relationship between data objects</p>
 
-<p><code>your_string = &quot;hello&quot;</code></p>
+<h2 id="entity-sets">Entity Sets</h2>
 
-<p>We can extract part of a string FROM an index to the end<br />
-&gt; <code>your_string[2:] == &quot;llo&quot;</code></p>
+<p>Entity Sets describe the type of an entity.</p>
 
-<p>We can also extract part of a string FROM an index TO a limit (not including the limit index)<br />
-&gt; <code>your_string[1:4] == &quot;ell&quot;</code></p>
+<p>&#9633; Square - <strong>Entity name</strong><br />
+&#9675; Circle - <strong>Simple attribute</strong><br />
+&#9022; Double Circle - <strong>Multi-valued attribute</strong> <em>[ie array]</em><br />
+&#9676; Dotted circle - <strong>Derived attribute</strong> <em>[uses other attributes]</em><br />
+<strong>Composite attributes</strong> are drawn like a subtree<br />
+<strong>Primary Keys</strong> are underlined
+Straight lines connect these different items together</p>
 
-<p>We can step every <code>n</code> elements of a string<br />
-&gt; <code>your_string[::2] == &quot;hlo&quot;</code></p>
+<p><strong>Diamond</strong> for relationship</p>
 
-<p>We can extract part of a string, and also step<br />
-&gt; <code>your_string[0:4:2] == &quot;hl&quot;</code></p>
+<p><em><strong>Candidate Keys</strong> are the possible attributes that are can uniquely identify one entity from another.<br />
+<strong>Super Keys</strong> are composite candidate keys where a removal of one of the attributes will still uniquely identify it<br />
+An entity&rsquo;s <strong>Primary Key</strong> is the chosen candidate key</em></p>
 
-<p>We can reverse a string with a negative step<br />
-&gt; <code>your_string[::-1] == &quot;elloh&quot;</code></p>
+<p><img src="Snipaste_2019-04-13_15-18-20.png" alt="" /></p>
 
-<h1 id="im-mutability">(Im)mutability</h1>
+<p><strong>Cardinality</strong><br />
+1:1, 1:M, M:M<br />
+They can also be represented with lines and arrows (single arrow from the relator to the &lsquo;one&rsquo; relationship)</p>
 
-<p>Strings are immutable (cannot change a letter by its index)</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">string_variable</span> <span class="o">=</span> <span class="s2">&#34;Hello, World!&#34;</span>
-<span class="n">string_variable</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Z&#34;</span>
-<span class="c1"># TypeError: &#39;str&#39; object does not support item assignment</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Lists are mutable though!</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="n">string_variable</span>   <span class="o">=</span> <span class="s2">&#34;Hello, World!&#34;</span>
-<span class="n">list_of_string</span>    <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">string_variable</span><span class="p">)</span>
-<span class="n">list_of_string</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Z&#34;</span>
-<span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">list_of_string</span><span class="p">)</span>
-<span class="c1"># HZllo, World!</span></code></pre></td></tr></table>
-</div>
-</div>
+<p><strong>Level of Participation</strong><br />
+Partial Participation - 0 or more<br />
+Total Participation - 1 or more (Draw with two lines, or a thick line)</p>
+
+<h2 id="entity-instances">Entity Instances</h2>
+
+<p>Most similar to object instances, entity instances are actualisations of a entity set.</p>
+
+<p>No two entity instances can share the exact same attribute values. (Whereas object instances can)</p>
+
     </div>
 
     <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="../../post/flask-toolkit/">
+        <a class="prev" href="../../post/submitting-data-to-flask/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Flask Toolkit</span>
+            <span class="prev-text nav-default">Submitting data to Flask with HTML Forms</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="../../post/user-stories/">
-            <span class="next-text nav-default">User Stories</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
+        
       </nav>
     </footer>
   </article>

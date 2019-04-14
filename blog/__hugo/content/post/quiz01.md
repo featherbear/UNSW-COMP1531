@@ -70,10 +70,10 @@ e) Upon logging in, the user is presented with an option to book a flight or acc
 Which of the following is likely to represent a composition relationship?
 	
 a) A university employs a professor  
-b) A cricket stadium with a pitch and seats  
+**b) A cricket stadium with a pitch and seats**  
 c) A rugby team has a set of players  
 d) A library consisting of several books  
-**e) A car has four wheels**  
+**<s>e) A car has four wheels</s>**  
 
 # Question Eight
 The ability to describe and track the life of a requirement throughout the software development process from its inception to its actual deployment is referred to as:
@@ -98,6 +98,6 @@ _A doctor treats multiple patients, a patient can be treated by multiple doctors
 
 |    |    |
 |:--:|:--:|
-|  X |![](10b.png)|
+|  <s>X</s> |![](10b.png)|
 |    |![](10c.png)|
-|    |![](10a.png)|
+|  ANS  |![](10a.png)|

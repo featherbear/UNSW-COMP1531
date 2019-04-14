@@ -52,7 +52,7 @@
 
 <meta itemprop="datePublished" content="2019-04-10T18:05:21&#43;10:00" />
 <meta itemprop="dateModified" content="2019-04-10T18:05:21&#43;10:00" />
-<meta itemprop="wordCount" content="964">
+<meta itemprop="wordCount" content="967">
 
 
 
@@ -492,11 +492,11 @@ As a result, the response webpage will not be able to know the submitted data&he
   <span class="k">else</span><span class="p">:</span> <span class="c1"># request.method == &#34;POST&#34;</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">data</span>
 
-  <span class="n">name</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;name]</span><span class="err">
-</span><span class="err"></span><span class="s2">  age = int(data[&#34;</span><span class="n">age</span><span class="s2">&#34;])</span><span class="err">
-</span><span class="err"></span><span class="s2">  ageIsEven = age % 2 == 0</span><span class="err">
-</span><span class="err">
-</span><span class="err"></span><span class="s2">  return render_template(&#34;</span><span class="n">hello</span><span class="o">.</span><span class="n">html</span><span class="s2">&#34;, name = name, age = age, isEven = ageIsEven, formData = data)</span></code></pre></td></tr></table>
+  <span class="n">name</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;name&#34;</span><span class="p">]</span>
+  <span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&#34;age&#34;</span><span class="p">])</span>
+  <span class="n">ageIsEven</span> <span class="o">=</span> <span class="n">age</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+
+  <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s2">&#34;hello.html&#34;</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">,</span> <span class="n">isEven</span> <span class="o">=</span> <span class="n">ageIsEven</span><span class="p">,</span> <span class="n">formData</span> <span class="o">=</span> <span class="n">data</span><span class="p">)</span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -571,7 +571,11 @@ For example: <code>&lt;input type=&quot;number&quot; name=&quot;age&quot; requir
             <span class="prev-text nav-default">Storing website data</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        
+        <a class="next" href="../../post/entity-relationship-modelling/">
+            <span class="next-text nav-default">Entity Relationship Modelling</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
       </nav>
     </footer>
   </article>
@@ -623,6 +627,17 @@ For example: <code>&lt;input type=&quot;number&quot; name=&quot;age&quot; requir
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../../dist/even.26188efa.min.js"></script>
 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-107434487-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

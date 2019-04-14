@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Quiz 01 - COMP1531 Musings</title>
+  <title>Quiz 02 - COMP1531 Musings</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
 
 
-<link rel="canonical" href="../../post/quiz01/" />
+<link rel="canonical" href="../../post/quiz02/" />
 <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
@@ -39,26 +39,26 @@
 <link rel="stylesheet" href="../../css/typedjs.shortcode.css">
 
 
-<meta property="og:title" content="Quiz 01" />
+<meta property="og:title" content="Quiz 02" />
 <meta property="og:description" content="Disclaimer: These are my answers, not official answers." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/quiz01/" />
+<meta property="og:url" content="/post/quiz02/" />
 <meta property="article:published_time" content="2019-03-10T14:51:41&#43;11:00"/>
 <meta property="article:modified_time" content="2019-03-10T14:51:41&#43;11:00"/>
 
-<meta itemprop="name" content="Quiz 01">
+<meta itemprop="name" content="Quiz 02">
 <meta itemprop="description" content="Disclaimer: These are my answers, not official answers.">
 
 
 <meta itemprop="datePublished" content="2019-03-10T14:51:41&#43;11:00" />
 <meta itemprop="dateModified" content="2019-03-10T14:51:41&#43;11:00" />
-<meta itemprop="wordCount" content="609">
+<meta itemprop="wordCount" content="834">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Quiz 01"/>
+<meta name="twitter:title" content="Quiz 02"/>
 <meta name="twitter:description" content="Disclaimer: These are my answers, not official answers."/>
 
 <!--[if lte IE 9]>
@@ -118,7 +118,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Quiz 01</h1>
+      <h1 class="post-title">Quiz 02</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2019-03-10 </span>
@@ -157,151 +157,121 @@
 
 <h1 id="question-one">Question One</h1>
 
-<p>The role of a software engineer is to:</p>
+<p>In the iteration planning of XP planning, which statement below is true?</p>
 
-<p>a) Oversee the programmer and ensure quality code is produced<br />
-b) Ensure that the latest technology trend is applied to product development<br />
-<strong>c) Deliver value to the customer, ensuring business objectives are met</strong><br />
-d) Ensure quality control in the project</p>
+<p>a) The iteration size is chosen by the developer, rather than customer.<br />
+b) Customer can still change the stories in the iteration once it has begun.<br />
+<strong>c) The iteration ends on the specified date, even if all the stories aren&rsquo;t done.</strong><br />
+d) Customers prioritise user stories in the first iteration, regardless of the velocity.</p>
 
 <h1 id="question-two">Question Two</h1>
 
-<p>Which of the following is not true about class and object?</p>
+<p>High Quality is enforced in XP projects through use of:</p>
 
-<p>a) An object is instantiated from a class as an instance of the class<br />
-<strong>b) Two object instances of the same class share the same properties, behaviour and object identity</strong><br />
-c) An object has state but a class does not<br />
-d) Each object instance has a unique object identity<br />
-e) A class is a logical grouping of objects that share the same properties and behaviour</p>
+<p>a) pair-programming and test-driven development<br />
+b) simple design and refactoring of code<br />
+c) preventing change of requirements at the end of iteration<br />
+d) all of the above<br />
+<strong>e) a and b</strong></p>
 
 <h1 id="question-three">Question Three</h1>
 
-<p>Which of the following is not true about &lsquo;Encapsulation&rsquo;?</p>
+<p>A conversation between two developers:<br />
+<em>1: I am really worried<br />
+2: What happened?<br />
+3: Whenever I fix a bug in the system, some other functionality breaks which I have not touched at all</em></p>
 
-<p>a) Hides the object state so that it can only be accessed through its public interface (methods)<br />
-b) Restricts access to an object which means that changes to the internal implementation of the class does not affect other parts of the application or clients accessing the class<br />
-c) Increases the reusability of a class<br />
-<strong>d) Helps to reduce the complexity of a class</strong><br />
-e) Preserves the object state</p>
+<p>The above scenario illustrates what kind of design smell in the system software?</p>
+
+<p>a) Immobility<br />
+b) Opacity<br />
+<strong>c) Fragility</strong><br />
+d) Software viscosity<br />
+e) Rigidity</p>
 
 <h1 id="question-four">Question Four</h1>
 
-<p>Which one of the following is not true about domain modelling?</p>
+<p><img src="quiz2_01.png" alt="" /></p>
 
-<p>a) Domain modelling and requirements analysis are mutually dependent on each other<br />
-b) Fosters a shared unambiguous understanding of the problem domain among developers and stake holders<br />
-c) Determines how the elements of the &ldquo;system-to-be&rdquo; collaborate to deliver the behaviour promised by the &ldquo;system-to-be&rdquo;<br />
-<strong>d) Domain modelling is an alternative to use-case modelling in the requirements engineering phase</strong><br />
-e) Provide a visual representation of the problem domain by decomposing the domain into key concepts or objects and identify the relationships between them.</p>
+<p>Choose the incorrect statement</p>
+
+<p>a) The class Graphic does not conform to OCP as the method draw_to_scale() must be changed each time a new type of shape is introduced<br />
+b) The class Graphic should be decoupled from the responsibilities of calculating the scale and drawing the shape and delegate these responsibilities to the respective shape classes<br />
+<strong>c) The use of isInstance() method in the above example, does not lead to any code smells</strong><br />
+d) The class Graphic and the various shape classes are tightly coupled as Graphic accesses all the attributes of the shape classes directly</p>
 
 <h1 id="question-five">Question Five</h1>
 
-<p>In Git, if you want to make your local repository reflect changes that have been made in a remote (tracked) repository, you should run the ___________ command.</p>
+<p>Which of the following is true about software design?</p>
 
-<p>a) Push<br />
-b) Commit<br />
-<strong>c) Pull</strong><br />
-d) Fetch</p>
+<p>a) Coupling is defined as the the degree to which all elements of a component or class work together as a functional unit<br />
+b) Good software design aims for building a system with high coupling, low cohesiveness<br />
+c) Low coupling leads to eventual software rot<br />
+<strong>d) High cohesive classes are easier to maintain</strong><br />
+e) Low coupling occurs when one module A depends on the internal workings of another module B and is affected by internal changes to module B</p>
 
 <h1 id="question-six">Question Six</h1>
 
-<p>Which one of these represents a non-functional requirement?</p>
+<p>Which of the following statement(s) are not true about the XP Planning Game?</p>
 
-<p>a) The application must suspend further access, if the user enters the PIN incorrectly three times<br />
-<strong>b) The application must have a response time of no later than 3 seconds</strong><br />
-c) The online learning platform must enable students to download files uploaded by lecturers<br />
-d) A receipt can be printed upon request<br />
-e) Upon logging in, the user is presented with an option to book a flight or accommodation or both</p>
+<p>a) During iteration planning, customers choose user stories for the iteration from the release plan but must fit the current project velocity<br />
+b) During task planning, user stories are broken down into programming tasks and order of implementation of user stories within the iteration is determined<br />
+c) Initial exploration involves conversations between customer and developer team to identify epic stories, breaking down epics into user-stories and user-stories are estimated<br />
+d) During release planning, customers and developers negotiate a release date (6 or 12 or 24 months in the future) and customers specify which user stories are needed and the order for the planned date (business decisions)<br />
+<strong>e) During task-planning, developers are always assigned specific tasks and are not free to choose any kind of task</strong></p>
 
 <h1 id="question-seven">Question Seven</h1>
 
-<p>Which of the following is likely to represent a composition relationship?</p>
+<p>Which of the following statements is not true in relation to refactoring software?</p>
 
-<p>a) A university employs a professor<br />
-<strong>b) A cricket stadium with a pitch and seats</strong><br />
-c) A rugby team has a set of players<br />
-d) A library consisting of several books<br />
-<strong><s>e) A car has four wheels</s></strong></p>
+<p>a) Refactoring helps to improve the structure of the code without affecting its behaviour<br />
+<strong>b) Refactoring helps to improve the structure of the code but can possibly affect the behaviour of the application</strong><br />
+c) Refactoring introduces reusable code elements<br />
+d) Refactoring improves code understanding<br />
+e) Refactoring makes maintenance easier</p>
 
 <h1 id="question-eight">Question Eight</h1>
 
-<p>The ability to describe and track the life of a requirement throughout the software development process from its inception to its actual deployment is referred to as:</p>
+<p>Which one of these is a code smell?</p>
 
-<p>a) Requirements Elicitation<br />
-b) Requirements Specification<br />
-<strong>c) Requirements Traceability</strong><br />
-d) Test-Driven Development<br />
-e) Requirements Validation</p>
+<p>a) Code built in a way that a change in one part of code requires the change to be implemented at the other places as well.<br />
+b) The existence of too many conditions and loops that have the potential to be broken down and simplified<br />
+c) Use of a break statement to terminate the current loop<br />
+d) Presence of identical code<br />
+<strong>e) a, b and d</strong><br />
+f) a, b, c and d</p>
 
 <h1 id="question-nine">Question Nine</h1>
 
-<p>How do you model the following situation with a UML2 use case diagram?<br />
-<em>Father and son cook dinner. In the course of that, one of them always has to load the dishwasher.</em></p>
+<p>All being equal, which is more desirable?</p>
 
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="right"></th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center"></td>
-<td align="right"><img src="9a.png" alt="" /></td>
-</tr>
-
-<tr>
-<td align="center">X</td>
-<td align="right"><img src="9b.png" alt="" /></td>
-</tr>
-</tbody>
-</table>
+<p>a) Higher cohesion and higher coupling<br />
+<strong>b) Higher cohesion and lower coupling</strong><br />
+c) Lower cohesion and lower coupling<br />
+d) Lower cohesion and higher coupling</p>
 
 <h1 id="question-ten">Question Ten</h1>
 
-<p>How do you model the following situation with a UML2 class diagram?<br />
-<em>A doctor treats multiple patients, a patient can be treated by multiple doctors. To document which doctor has when treated which patient, the date and time of each treatment are stored.</em></p>
+<p>Which of the following statements is not true about test-driven development?</p>
 
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="center"><s>X</s></td>
-<td align="center"><img src="10b.png" alt="" /></td>
-</tr>
-
-<tr>
-<td align="center"></td>
-<td align="center"><img src="10c.png" alt="" /></td>
-</tr>
-
-<tr>
-<td align="center">ANS</td>
-<td align="center"><img src="10a.png" alt="" /></td>
-</tr>
-</tbody>
-</table>
+<p>a) TDD helps to guarantee that all of the business rules have valid tests written for them even before the code is written<br />
+b) Having solid unit tests allows the developers to refactor without fear. That is, they can much more easily maintain and extend the application.<br />
+c) TDD helps us to define the problem before solving it – defining the problem in terms of a test before solving the problem, is very helpful in gaining insight into the problem<br />
+<strong>d) TDD is not recommended for agile software development methodologies as it slows down the number of user-stories that can be implemented in an iteration</strong><br />
+e) TDD prevents scope creep – i.e. temptation of developers to include features that are not currently required, because they seem easy when doing the development</p>
 
     </div>
 
     <footer class="post-footer">
       
       <nav class="post-nav">
-        <a class="prev" href="../../post/quiz02/">
+        <a class="prev" href="../../post/uml-class-diagram/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Quiz 02</span>
+            <span class="prev-text nav-default">[UML] Class Diagram</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="../../post/python-getter-setter-methods/">
-            <span class="next-text nav-default">Python - Getter/Setter Methods</span>
+        <a class="next" href="../../post/quiz01/">
+            <span class="next-text nav-default">Quiz 01</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

@@ -3,7 +3,7 @@ publishDir = ".."
 summaryLength = 0
 relativeurls = true
 
-
+googleAnalytics = "UA-107434487-2"
 baseURL = ""
 languageCode = "en"
 defaultContentLanguage = "en"

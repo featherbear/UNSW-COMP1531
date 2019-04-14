@@ -292,7 +292,7 @@ def helloMULTI():
   else: # request.method == "POST"
     data = request.data
 
-  name = data["name]
+  name = data["name"]
   age = int(data["age"])
   ageIsEven = age % 2 == 0
 
