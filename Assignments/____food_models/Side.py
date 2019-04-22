@@ -1,2 +1,0 @@
-class __SIDE():
-  pass
