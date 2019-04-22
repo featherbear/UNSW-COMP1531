@@ -15,31 +15,6 @@ sequenceDiagrams:
 
 ---
 
-Aside: Big Data
----
-Big Data refers to (a lot of) data of different types that can be analysed to provide insights.
-
-The three V's of Big Data are:
-
-* **V**olume - The amount
-* **V**elocity - The rate
-* **V**ariety - The types
-
-Originally - to store data, the common SQL approach was adopted. However when requiring to store datatypes of different and complex types, other standards such as NoSQL (Not-Only SQL) came to arise
-
-Aside: Databases
----
-
-**DBMS** - **D**ata**b**ase **M**anagement **S**ystem  
-**DDL** - **D**ata **D**efinition **L**anguage _[schemas]_  
-**DML** - **D**ata **M**anipulation **L**anguage _[transactions]_
-
-Types of Databases:  
-* OO Model - OODBMS
-* Relational Model - RDBMS - ie Oracle, MySQL, SQLite
-* DOM Model - ie JSON, XML - ie MongoDB
-
-
 # Entity Relationship Modelling
 ER Modelling is another way to describe the relationship between data objects
 
@@ -68,9 +43,40 @@ They can also be represented with lines and arrows (single arrow from the relato
 
 **Level of Participation**  
 Partial Participation - 0 or more  
-Total Participation - 1 or more (Draw with two lines, or a thick line)
+Total Participation - 1 or more (Draw with two lines, or a thick line) (There must be at least one relation for the entity that has been double lined)
+
+
+# Weak and Strong entities 
+Strong - single border  
+Weak - double border
+
+Weak Entities only exist because of an association with strong entities.  
+They therefore have no key, and must be a total commitment (thick/double line).
+
+
+# Relations
+Relations can have attributes too!
+
+
+# Subclasss and Inheritances
+
+```
+          parent
+            |
+      overlapping (o)
+        disjoint (d)
+      /             \
+   Subclass 1      Subclass 2
+```
 
 ## Entity Instances
 Most similar to object instances, entity instances are actualisations of a entity set.
 
 No two entity instances can share the exact same attribute values. (Whereas object instances can)
+
+---
+
+![](erdiagram.png)  
+![](jenn.png)  
+![](exercise3.png)  
+![](20190417_150129.jpg)  

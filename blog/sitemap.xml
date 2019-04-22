@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/databases/</loc>
+    <lastmod>2019-04-17T14:37:42+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/entity-relationship-modelling/</loc>
     <lastmod>2019-04-13T15:14:07+10:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -122,6 +129,13 @@
   </url>
   
   <url>
+    <loc>/post/assign/</loc>
+    <lastmod>2019-03-04T09:07:16+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/unified-modelling-language/</loc>
     <lastmod>2019-02-27T15:00:02+11:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -214,7 +228,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-04-13T15:14:07+10:00</lastmod>
+    <lastmod>2019-04-17T14:37:42+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -235,7 +249,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-04-13T15:14:07+10:00</lastmod>
+    <lastmod>2019-04-17T14:37:42+10:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

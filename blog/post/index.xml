@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Sat, 13 Apr 2019 15:14:07 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 14:37:42 +1000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Databases; Box-Line Diagrams</title>
+      <link>/post/databases/</link>
+      <pubDate>Wed, 17 Apr 2019 14:37:42 +1000</pubDate>
+      
+      <guid>/post/databases/</guid>
+      <description>Aside: Big Data Big Data refers to (a lot of) data of different types that can be analysed to provide insights.</description>
+    </item>
     
     <item>
       <title>Entity Relationship Modelling</title>
@@ -18,7 +27,7 @@
       <pubDate>Sat, 13 Apr 2019 15:14:07 +1000</pubDate>
       
       <guid>/post/entity-relationship-modelling/</guid>
-      <description>Aside: Big Data Big Data refers to (a lot of) data of different types that can be analysed to provide insights.</description>
+      <description>Entity Relationship Modelling ER Modelling is another way to describe the relationship between data objects</description>
     </item>
     
     <item>
@@ -163,6 +172,15 @@
       
       <guid>/post/lab03_04/</guid>
       <description>Actors and Goals    Actors Goals Use-case Name     Customer To find a preferred car Search   Customer To adjust search criteria    Customer To fill in all required personal details Update details   Customer To make payment for selected car Make payment   Admin To enter new car information into the system Add new cars   Manager To generate an overview report a week Generate report    Use Case Diagram   [draw.</description>
+    </item>
+    
+    <item>
+      <title>Assignment - GourmetBurgers</title>
+      <link>/post/assign/</link>
+      <pubDate>Mon, 04 Mar 2019 09:07:16 +1100</pubDate>
+      
+      <guid>/post/assign/</guid>
+      <description>Demo Site | featherbear.</description>
     </item>
     
     <item>
