@@ -1,7 +1,6 @@
 ---
 title: "Assignment - GourmetBurgers"
-date: 2019-03-04T09:07:16+11:00
-
+date: 2019-04-25T09:07:16+11:00
 categories: ["Assessments"]
 
 hiddenFromHomePage: false
@@ -17,6 +16,9 @@ sequenceDiagrams:
 
 ---
 
+_original\_post\_date: 2019-03-04T09:07:16+11:00_
+
+
 > Demo Site | [featherbear.github.io](https://featherbear.github.io/UNSW-COMP1531-Assignment/)  
 > GitHub | [featherbear/UNSW-COMP1531-Assignment](https://github.com/featherbear/UNSW-COMP1531-Assignment)   
 
@@ -24,16 +26,10 @@ Over the course of this semester, I had a group assignment to implement an onlin
 The backend had to be written with Python, and Flask.
 
 
-![System diagram](20190401_144906.png)
-
-
-We used Trello to manage our TODO list
-![Trello task backlog](Snipaste_2019-03-30_15-08-47.png)
-
 ---
 
 # Screenshots
-
+<details>
 ![Homepage](view_home.png)
 <video style="max-width: 760px" src="view_menu.mp4" autoplay loop muted></video>
 ![Customise Modal](view_customise.png)
@@ -41,7 +37,7 @@ We used Trello to manage our TODO list
 ![Order Status](view_order.png)
 ![Staff Order Dashboard](view_order_some.png)
 ![Staff Inventory Dashboard](view_inventory.png)
-
+</details>
 
 ---
 
@@ -68,9 +64,19 @@ We used Trello to manage our TODO list
 ## Website Design Mockups
 ![](https://github.com/featherbear/UNSW-COMP1531-Assignment/raw/master/docs/site%20design%20storyboard.png)
 
+## System Overview
+![System diagram](20190401_144906.png)
+
+## Task Management
+We used Trello to manage our TODO list  
+
+![Trello task backlog](Snipaste_2019-03-30_15-08-47.png)
+
 ---
 
 # Progress Log
+
+
 |`27/02/19`|
 |:--|
 |Facebook group chat created to allow for online communication|
