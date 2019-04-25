@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Fri, 22 Mar 2019 14:00:00 +1100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 09:07:16 +1100</lastBuildDate>
     
 	<atom:link href="/categories/assessments/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Assignment - GourmetBurgers</title>
+      <link>/post/assign/</link>
+      <pubDate>Thu, 25 Apr 2019 09:07:16 +1100</pubDate>
+      
+      <guid>/post/assign/</guid>
+      <description>original_post_date: 2019-03-04T09:07:16+11:00</description>
+    </item>
+    
+    <item>
+      <title>Quiz 03</title>
+      <link>/post/quiz03/</link>
+      <pubDate>Wed, 24 Apr 2019 14:00:00 +1000</pubDate>
+      
+      <guid>/post/quiz03/</guid>
+      <description>Disclaimer: These are my answers, not official answers.</description>
+    </item>
     
     <item>
       <title>Mid-Semester  Exam</title>
@@ -37,15 +55,6 @@
       
       <guid>/post/quiz02/</guid>
       <description>Disclaimer: These are my answers, not official answers.</description>
-    </item>
-    
-    <item>
-      <title>Assignment - GourmetBurgers</title>
-      <link>/post/assign/</link>
-      <pubDate>Mon, 04 Mar 2019 09:07:16 +1100</pubDate>
-      
-      <guid>/post/assign/</guid>
-      <description>Demo Site | featherbear.</description>
     </item>
     
   </channel>

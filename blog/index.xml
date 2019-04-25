@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Andrew Wong (z5206677)</copyright>
-    <lastBuildDate>Wed, 17 Apr 2019 14:37:42 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 09:07:16 +1100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Assignment - GourmetBurgers</title>
+      <link>/post/assign/</link>
+      <pubDate>Thu, 25 Apr 2019 09:07:16 +1100</pubDate>
+      
+      <guid>/post/assign/</guid>
+      <description>original_post_date: 2019-03-04T09:07:16+11:00</description>
+    </item>
+    
+    <item>
+      <title>Quiz 03</title>
+      <link>/post/quiz03/</link>
+      <pubDate>Wed, 24 Apr 2019 14:00:00 +1000</pubDate>
+      
+      <guid>/post/quiz03/</guid>
+      <description>Disclaimer: These are my answers, not official answers.</description>
+    </item>
+    
+    <item>
+      <title>Software Architecture</title>
+      <link>/post/software-architecture/</link>
+      <pubDate>Tue, 23 Apr 2019 16:00:00 +1000</pubDate>
+      
+      <guid>/post/software-architecture/</guid>
+      <description>Architectural Style 1) Components</description>
+    </item>
     
     <item>
       <title>Databases; Box-Line Diagrams</title>
@@ -172,15 +199,6 @@
       
       <guid>/post/lab03_04/</guid>
       <description>Actors and Goals    Actors Goals Use-case Name     Customer To find a preferred car Search   Customer To adjust search criteria    Customer To fill in all required personal details Update details   Customer To make payment for selected car Make payment   Admin To enter new car information into the system Add new cars   Manager To generate an overview report a week Generate report    Use Case Diagram   [draw.</description>
-    </item>
-    
-    <item>
-      <title>Assignment - GourmetBurgers</title>
-      <link>/post/assign/</link>
-      <pubDate>Mon, 04 Mar 2019 09:07:16 +1100</pubDate>
-      
-      <guid>/post/assign/</guid>
-      <description>Demo Site | featherbear.</description>
     </item>
     
     <item>

@@ -3,6 +3,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/assign/</loc>
+    <lastmod>2019-04-25T09:07:16+11:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/quiz03/</loc>
+    <lastmod>2019-04-24T14:00:00+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/software-architecture/</loc>
+    <lastmod>2019-04-23T16:00:00+10:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/databases/</loc>
     <lastmod>2019-04-17T14:37:42+10:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -129,13 +150,6 @@
   </url>
   
   <url>
-    <loc>/post/assign/</loc>
-    <lastmod>2019-03-04T09:07:16+11:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/post/unified-modelling-language/</loc>
     <lastmod>2019-02-27T15:00:02+11:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -214,7 +228,7 @@
   
   <url>
     <loc>/categories/assessments/</loc>
-    <lastmod>2019-03-22T14:00:00+11:00</lastmod>
+    <lastmod>2019-04-25T09:07:16+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -228,14 +242,14 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-04-17T14:37:42+10:00</lastmod>
+    <lastmod>2019-04-25T09:07:16+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-03-22T14:00:00+11:00</lastmod>
+    <lastmod>2019-04-25T09:07:16+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -249,7 +263,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-04-17T14:37:42+10:00</lastmod>
+    <lastmod>2019-04-25T09:07:16+11:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

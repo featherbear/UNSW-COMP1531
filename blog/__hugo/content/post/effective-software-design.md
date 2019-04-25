@@ -42,6 +42,14 @@ Design smells are a symptom of poor design, often caused by violation of key des
 -> We want high cohesion
 
 # SOLID
+
+Single Responsbility Principle - One reason for change  
+Open Closed Principle - Open for extension, closed for modification   
+Liskov Substitution Principle  
+Interface Segregation Principle  
+Dependency Inversion Principle  
+
+
 ## Single Reponsibility Principle
 Class should have ONE reason to change
 
