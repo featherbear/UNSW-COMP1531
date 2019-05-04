@@ -154,10 +154,10 @@ Class diagrams are a way to represent the attributes and behaviour of an object,
 
 |Name|Meaning|Symbol|
 |:--:|:--|:--:|
-|Inheritance|'Is a kind of'|&##x21E7;|
+|Inheritance|'Is a kind of'|&#x21E7;|
 |Association|'Has a'|Solid line|
-|Aggregation|'Contains' (optional)|&##9674;|
-|Composition|'Composes' (integral)|&##9830;|
+|Aggregation|'Contains' (optional)|&#9674;|
+|Composition|'Composes' (integral)|&#9830;|
 
 * Cardinality
   * One to One - 1:1
