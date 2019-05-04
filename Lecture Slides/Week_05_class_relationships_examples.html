@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week 05 class relationships examples</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h4 id="example-1">Example 1:</h4>
+<pre><code>class  Pet:
+    def  __init__(self, species, age, owner=None):
+        self._species = species
+	    self._age = age
+	    self._owner = owner
+    def  set_owner(self, p):
+	    self._owner = p
+
+class  Car:
+    def  __init__(self,make,model):
+        self._make = make
+        self._model = model
+
+class  Person:
+    def  __init__(self,name):
+        self._name = name
+    def  drive(self, c):
+	    pass
+
+  
+andrew = Person("andrew")
+some_car = Car("Honda","Euro")
+
+#example of association between Car and Person through method collaboration
+andrew.drive(some_car)
+
+#example of association between Pet and Person through setting the owner. Here,
+#pet instance can be associated with any Person instance
+terry = Pet("labrador",1)
+terry.set_owner(andrew)
+</code></pre>
+<h4 id="example-2--aggregation">Example 2:  Aggregation</h4>
+<pre><code>class  Car:
+# composition - car composes engine
+    def  __init__(self,make,model,engine):
+    self._make = make
+    self._moel = model
+    self._engine = engine
+
+class  Engine:
+    def  __init__(self,chassis):    
+	    self._chassis = chassis
+
+#here, the part is instantiated outside the container
+#part instance can exist even after the container does not exist
+#hence this is an example of aggregation
+
+e=Engine("456xsdf")
+my_car = Car("Honda","Accord",e)
+another_car = Car("Honda","Civic",e)
+</code></pre>
+<h4 id="example-3--composition">Example 3:  Composition</h4>
+<pre><code>class  Car:  
+# composition - car composes engine
+# part instiated inside the constructor of the container
+
+    def  __init__(self,make,model, chassis):
+        self._make = make
+        self._moel = model
+        self._engine = Engine(chassis)
+
+class  Engine:
+    def  __init__(self,chassis):
+        self._chassis = chassis
+
+my_car = Car("Honda","Accord","456sxd")
+</code></pre>
+</div>
+</body>
+
+</html>

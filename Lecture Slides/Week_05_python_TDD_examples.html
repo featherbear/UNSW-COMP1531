@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week 05 python TDD examples</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><p><strong>1. Testing with Unittest</strong><br>
+(a) Create a file  <code>arith.py</code></p>
+<pre><code>#file arith.py
+def def  add(x,y):
+    return x+y
+def  multiply(x,y):
+    return x*y
+def  divide(x,y):
+	return x/y:
+
+</code></pre>
+<p>(b) Create a  <code>**unittest**</code>  <code>arith_test1.py</code></p>
+<h4 id="test_add.py">test_add.py</h4>
+<pre><code>
+from arith import add
+import unittest
+class  AddTestCase(unittest.TestCase):
+    def  test_add_with_correct_values(self):
+	    self.assertEqual(add(2,3),5)
+	def  test_add_with_neg_inputs(self):
+		self.assertEquals(add(-1,-1),-2)
+if  __name__=='main':
+    unittest.main()
+</code></pre>
+<h4 id="test_divide.py">test_divide.py</h4>
+<pre><code>from arith import divide
+class  DivideTestCase(unittest.TestCase):
+    def  test_divide_correct_inputs(self):
+	    self.assertEqual(divide(4,2),2)
+	
+	def  test_divide_denominator_zero(self):
+		with  self.assertRaises(ZeroDivisionError):
+			divide(4,0)
+if  __name__=='main':
+	unittest.main()
+</code></pre>
+<p><em>Run as: python –m unittest –v test_module</em></p>
+<p><strong>2. Testing with Pytest</strong><br>
+install pytest with: <code>pip3 install pytest</code></p>
+<h4 id="test_arith.py"><code>test_arith.py</code></h4>
+<pre><code>from arith import add,divide
+import pytest
+def  test_multiply_numbers_3_4():
+	assert multiply(3,4) ==  12
+def  test_add_numbers_3_4():
+	assert add(3,4) ==  7`
+def  test_divide_with_zero_denominator():
+	with pytest.raises(ZeroDivisionError):
+		divide(4,0)
+</code></pre>
+<p><strong>3: TDD Example</strong></p>
+<h4 id="palin.py"><a href="http://palin.py">palin.py</a></h4>
+<pre><code>#Step 1: Write an empty function and test
+# def is_palindrome(letters):
+# 	pass
+
+#Step 2:  Implement the function and test
+# def is_palindrome(letters):
+# 	return letters == letters[::-1]
+
+#Step 3:  Modify the function to ignore case and test
+  
+# def is_palindrome(letters):
+# 	letters = letters.lower()
+# 	return letters == letters[::-1]
+
+#Step 4:  Modify the function to ignore space and test
+def  is_palindrome(letters):
+	letters = [c for c in letters.lower() if c.isalpha()]
+	return letters == letters[::-1]
+
+</code></pre>
+<h4 id="palin_test.py">palin_test.py</h4>
+<pre><code>import pytest
+from palin import is_palindrome
+def  test_function_accepts_palindromic_input():
+	input  =  "NooN"
+	assert is_palindrome(input) ==  True
+def  test_function_ignore_case():
+	input  =  "Level"
+	assert is_palindrome(input) ==  True
+def  test_function_ignore_space():
+	input  ="Too bad i hid a boot"
+	assert is_palindrome(input) ==  True
+
+</code></pre>
+<p><strong>4. Exceptions</strong></p>
+<pre><code>#Example 1
+try:
+	file  =  open("testfile1","w")
+	file.write("This is my test file: I love testing")
+except  IOError:
+	print("Error: can\'t find the file or read data")
+else:
+	print("Content has been written successfully")
+	file.close()
+finally:
+	print("All writing done")
+	print()
+
+#Example 2
+try:
+	file  =  open("testfile2","r")
+	file.write("This is another test file: I love testing")
+except  IOError:
+	print("Error: can\'t find the file or read data")
+else:
+	print("Content has been read successfully")
+	file.close()
+finally:
+	print("All reading done")
+
+#Example 3
+try:
+		numerator =  int(input("Enter the numerator: "))
+		denominator =  int(input("Enter the denominator: "))
+		result = numerator/denominator
+except  ValueError:
+		print("Err.. please enter numbers only")
+except  ZeroDivisionError:
+		print("Err.. division by zero is not possible")
+		print("you have entered nos %0.2f, %0.2f and the result is %0.2f"%(num,den,result))
+
+#Example 4
+class  AuthenticationException(Exception):
+	"Raised when the password is incorrect"
+	pass
+
+  #business logic
+def  authenticate(input_password):
+	if input_password !=  'password':
+		raise AuthenticationError("Invalid password was provided")
+#an example with a custom exception passing in custom args
+#when an exception occurs or is raised, it may have #associated value stored as exception's argument.  you can #pass as many arguments you want.
+         #raise AuthenticateException({'msg':"Invalid password was provided",'val':password})
+    return  True
+
+def  validate_user(username,password):
+	try:
+		return username == "test" and authenticate(password)
+	except AuthenticateException as errmsg:
+		print("Invalid password. Please try again")
+		print(e)
+		print(e.args)
+		print(type(e)) # print the type of Exception thrown
+		return  False
+	else:
+		print("You have been successfully authenticated") 
+</code></pre>
+<p>Example 4:</p>
+<pre><code>import pytest
+from exception2 import AuthenticateException,validate_user,authenticate
+
+def  test_validate_user():
+	username='test'
+	password='hello'
+	assert validate_user(username,password) ==  True
+
+def  test_validate_password():
+	password='hellos'
+	with pytest.raises(AuthenticateException):
+		authenticate(password)
+
+def  test_validate_user_incorrect_pwd():
+	username='test'
+	password='hellos'
+	assert validate_user(username,password) ==  False
+</code></pre>
+</div>
+</body>
+
+</html>
