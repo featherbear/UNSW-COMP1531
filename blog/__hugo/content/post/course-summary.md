@@ -232,7 +232,7 @@ They have no key, and must be a total commitment to the relation
 
 <!-- ## Box Line Digrams -->
 
-## [Software Arhitecture](../software-architecture)
+## [Software Architecture](../software-architecture)
 
 * Client-Server Architecture
 
