@@ -58,12 +58,12 @@ Class should have ONE reason to change
 + Testability
 
 ## Open-Closed Principle
-**Open** - Program is open to modifications  
-**Closed** - Extension of the behaviour should need to modify the internals
+**Open** - Program is open to extension of behaviour  
+**Closed** - Extension of the behaviour should not need to modify the internals
 
 Applying OCP reduces rigidity, and is achievable by abstracting functionality
 
-Dynamic Binding - At runtime Python is able to determine what type a variable is.
+<!-- Dynamic Binding - At runtime Python is able to determine what type a variable is. -->
 
 <!-- **Polymorphism** - Different methods depending on type -->
 
@@ -74,7 +74,8 @@ Holds the data, state, and methods of a data structure
 Responds to changes from the controller
 
 ## View (Observer)
-Presentation layer (Representation of the model)
+The presentation layer, a representation of the data inside a model.  
+For example, the website interface.
 
 ## Controller
-... the controller...?
+The backend of the MVC architecture, where actions are performed, and reflected onto the model

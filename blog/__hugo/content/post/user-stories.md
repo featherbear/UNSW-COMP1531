@@ -70,9 +70,20 @@ The acceptance criterion are individual requirements and functionality for each 
 *When ____, then _____*
 
 
-
 ---
-# Using the Invest Framework
+
+# Three C&apos;s of a User Story
+**Card**  
+The physical representation (post-it note!) summarising who, what and why  
+
+**Conversation**  
+The dialogue between parties, specifying concrete feature requests and requirements  
+
+**Confirmation**  
+The acknowledgement of the procured requirements and tasks
+
+
+# The INVEST Framework
 [**I** ndependent](#independent)  
 [**N** egotiable](#negotiable)  
 [**V** aluable](#valuable)  

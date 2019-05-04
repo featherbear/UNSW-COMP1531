@@ -44,5 +44,13 @@ Abstraction serves to generalise the properties and behaviour of objects - disca
 # Encapsulation
 Encapsulation refers to the private scope of an object's attributes.  
 
-The attributes in an object ['cannot' be accessed by external entities](#encapsulation).  
-Rather, the object must invoke one of its methods
+The attributes in an object <u title="It can in Python">'cannot'</u> be accessed by external entities.  
+Rather, the object must invoke one of its methods to retreive the attribute
+
+#Aside (not in course)#
+
+## Polymorphism
+Ability for an object to act as a different data type depending on how it is used
+
+## Overloading
+Ability for a method to take in different parameters - but doesn't occur in Python as it is a dynamically typed langauge

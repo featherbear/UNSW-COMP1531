@@ -22,26 +22,22 @@ Each phase completed before progressing to the next one
 
 Good for software with very clearly known and explicit requirements without and ambiguitiy
 
-(can't go back - or will be very costly)
-rigid
-no working software produced until late into the SDLC
+* Costly to go back a stage
+* Rigid
+* No working software produced until late into the SDLC
+* Very stable
 
 
-Very stable
+# Iterative/Incremental Approach
 
-
-# Iterative / Incremental Approach
-- Incremental functionality
-
-
-Break the problem into smaller pieces and prioritise them
-Incremental + customer feedback
+* Break the problem into smaller pieces and prioritise them
+* Incremental deliverables + customer feedback
 
 ## Models
 - Unified Software Development Process
   - Requirements, analysis, design, implementation of each approach
   - Timeboxed
-- Rational Unified Process
+- [Rational Unified Process](../rational-unified-process)
 - Agile
 
 

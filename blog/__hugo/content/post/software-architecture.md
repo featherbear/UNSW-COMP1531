@@ -16,6 +16,7 @@ sequenceDiagrams:
 ---
 
 # Architectural Style
+
 1) Components  
 2) Connectors - (ie RPC, broadcast, protocols)  
 3) Constraints  

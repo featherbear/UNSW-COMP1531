@@ -105,8 +105,3 @@ A better approach would be to create a second table (many-to-many), which links 
 |1|Photography|
 |1|Programming|
 |1|Music|
-
-# Box-Line Diagram
-Box-line diagrams are another way to represent the relationship between tables.
-
-![](Sketch (1)a.png)

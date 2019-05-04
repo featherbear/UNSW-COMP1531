@@ -29,12 +29,8 @@ They aim to "deliver value to the customer".
 
 &nbsp;  
 
-&nbsp;  
-
-&nbsp;  
-
 Links
 ---
 
-[Software Development Life Cycle](../sdlc)  
-[Software Development Approaches](../sda)
+[Software Development Life Cycle](../software-development-lifecycle)  
+[Software Development Approaches](../software-development-approaches)

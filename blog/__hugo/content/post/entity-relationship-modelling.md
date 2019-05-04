@@ -74,9 +74,18 @@ Most similar to object instances, entity instances are actualisations of a entit
 
 No two entity instances can share the exact same attribute values. (Whereas object instances can)
 
+
 ---
+
 
 ![](erdiagram.png)  
 ![](jenn.png)  
 ![](exercise3.png)  
 ![](20190417_150129.jpg)  
+
+---
+
+# Box-Line Diagram
+Box-line diagrams are another way to represent the relationship between tables.
+
+They are a tabular form of the ER diagram

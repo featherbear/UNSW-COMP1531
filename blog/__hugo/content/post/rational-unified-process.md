@@ -15,7 +15,13 @@ sequenceDiagrams:
 
 ---
 
-The Rational Unified Process is a [software developement approach]() similar to the agile approach.
+The Rational Unified Process is a [software development approach](../software-development-approaches) similar to the agile approach.
+
+It revolves around the principle of each iteration involving all four phases, however the later phases being given more attention the further the project develops
+ 
+![](http://www.ambysoft.com/artwork/lifecycleAgileUP.gif)
+
+---
 
 # Phases
 ## Phase One - Inception
@@ -29,7 +35,4 @@ Things get made.
 
 ## Phase Four - Transition
 Release to production
-
-It revolves around the principle of each iteration involving all four phases, however the later phases being given more attention the further the project develops 
-![](http://www.ambysoft.com/artwork/lifecycleAgileUP.gif)
 

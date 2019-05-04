@@ -24,18 +24,3 @@ sequenceDiagrams:
 
 * Daily standup meetings
 ![](Snipaste_2019-03-30_21-44-46.png)
-
-
-
-
-# Project Velocity
-The project velocity is the average rate of story points that are completed in each iteration
-
-Time - Number of user stories that can be implemented before a given date.
-Number of iterations by velocity
-
-
-Project duration - Total Work Size / Project Velocity
-
-Scope - How long a set of stories will take to finish.  
-_(Total Weeks of Estimated User Stores / Project Velocity)_
